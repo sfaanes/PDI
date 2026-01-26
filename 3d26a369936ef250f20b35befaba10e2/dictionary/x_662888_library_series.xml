@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="c916f0b593e63650f20b35befaba1065" label="Series" max_length="40" name="x_662888_library_series" type="collection">
+        <element choice="1" label="Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Active" sequence="0" value="active"/>
+                <element inactive_on_update="false" label="Retired" sequence="1" value="retired"/>
+                <element inactive_on_update="false" label="Duplicate" sequence="2" value="duplicate"/>
+            </choice>
+        </element>
+        <element label="Long Description" max_length="40" name="long_description" type="html"/>
+        <element label="Author" max_length="32" name="author" reference="x_662888_library_author" type="reference"/>
+        <element label="Description" max_length="255" name="description" type="string"/>
+        <element label="Genre" max_length="32" name="genre" reference="x_662888_library_genre" type="reference"/>
+        <element label="Name" max_length="100" name="name" type="string"/>
+        <element label="Duplicate of" max_length="32" name="duplicate_of" reference="x_662888_library_series" type="reference"/>
+        <element choice="1" label="Series type" max_length="40" name="series_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Duology" sequence="2" value="duology"/>
+                <element inactive_on_update="false" label="Sub-series" sequence="4" value="sub_series"/>
+                <element inactive_on_update="false" label="Saga" sequence="0" value="saga"/>
+                <element inactive_on_update="false" label="Universe" sequence="3" value="universe"/>
+                <element inactive_on_update="false" label="Trilogy" sequence="1" value="trilogy"/>
+            </choice>
+        </element>
+        <element label="series_key" max_length="40" name="series_key" type="string"/>
+        <index name="index">
+            <element name="author"/>
+        </index>
+        <index name="index2">
+            <element name="duplicate_of"/>
+        </index>
+        <index name="index3">
+            <element name="genre"/>
+        </index>
+        <index name="index4" unique="true">
+            <element name="series_key"/>
+        </index>
+    </element>
+</database>

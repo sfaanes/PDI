@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function ($scope, $sce) {
+  // Render HTML safely (trusted) - ok for hobby/internal use
+  $scope.trustedHtml = function (html) {
+    if (!html) return "";
+    return $sce.trustAsHtml(html);
+  };
+}
+]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.lib-record-detail .lib-error {
+  padding: 12px;
+}
+
+.lib-back {
+  margin-bottom: 12px;
+}
+
+.lib-back-link {
+  text-decoration: none;
+}
+
+.lib-detail-layout {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 18px;
+}
+
+.lib-detail-cover {
+  border: 1px solid rgba(0,0,0,0.12);
+  border-radius: 12px;
+  background: rgba(0,0,0,0.04);
+  overflow: hidden;
+  height: 380px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lib-detail-cover img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.lib-detail-cover-placeholder {
+  width: 70%;
+  height: 80%;
+  border: 1px dashed rgba(0,0,0,0.25);
+  border-radius: 10px;
+}
+
+.lib-detail-title {
+  margin: 0 0 10px 0;
+  font-weight: 700;
+}
+
+.lib-detail-meta {
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 10px;
+  padding: 10px 12px;
+  margin-bottom: 14px;
+}
+
+.lib-detail-meta-row {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 10px;
+  padding: 6px 0;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+
+.lib-detail-meta-row:last-child {
+  border-bottom: none;
+}
+
+.lib-detail-meta-label {
+  font-size: 12px;
+  color: rgba(0,0,0,0.65);
+  font-weight: 600;
+}
+
+.lib-detail-meta-value {
+  font-size: 13px;
+  color: rgba(0,0,0,0.9);
+}
+
+.lib-meta-link {
+  text-decoration: none;
+}
+
+.lib-meta-link:hover {
+  text-decoration: underline;
+}
+
+.lib-detail-desc-short {
+  margin-bottom: 10px;
+  color: rgba(0,0,0,0.85);
+}
+
+.lib-detail-desc-long {
+  color: rgba(0,0,0,0.85);
+}
+</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>record_detail</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>Record Detail</name>
+        <option_schema>[&#13;
+  { "name": "table", "label": "Table", "type": "string", "default": "x_662888_library_book" },&#13;
+  { "name": "sys_id_param", "label": "URL sys_id param", "type": "string", "default": "sys_id" },&#13;
+&#13;
+  { "name": "title_field", "label": "Title field", "type": "string", "default": "title" },&#13;
+  { "name": "image_field", "label": "Image field (optional)", "type": "string", "default": "cover" },&#13;
+&#13;
+  { "name": "meta_fields", "label": "Meta fields (comma-separated)", "type": "string", "default": "author,series,genre,first_published_year,primary_language,status" },&#13;
+&#13;
+  { "name": "short_description_field", "label": "Short description field (optional)", "type": "string", "default": "description" },&#13;
+  { "name": "long_description_field", "label": "Long description field (optional)", "type": "string", "default": "long_description" },&#13;
+&#13;
+  { "name": "back_link_page", "label": "Back link page (optional)", "type": "string", "default": "library_browse_books" },&#13;
+  { "name": "back_link_label", "label": "Back link label", "type": "string", "default": "Back to books" },&#13;
+ { "name": "link_map", "label": "Link map (JSON)", "type": "string", "default": "{\"author\":{\"page\":\"library_author\"},\"series\":{\"page\":\"library_series\"},\"genre\":{\"page\":\"library_genre\"}}" },&#13;
+{ "name": "link_field_param", "label": "Link param name", "type": "string", "default": "sys_id" }&#13;
+&#13;
+]&#13;
+</option_schema>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function () {
+  data.error = "";
+  data.record = null;
+
+  var opts = options || {};
+  var table = (opts.table || "").trim();
+  var sysIdParam = (opts.sys_id_param || "sys_id").trim();
+
+  if (!table) {
+    data.error = "Missing option: table";
+    return;
+  }
+
+  var sysId = (input && input.sys_id) ? ("" + input.sys_id) : ("" + ($sp.getParameter(sysIdParam) || ""));
+  sysId = (sysId || "").trim();
+
+  if (!sysId) {
+    data.error = "Missing record id";
+    return;
+  }
+
+  var gr = new GlideRecord(table);
+  if (!gr.isValid()) {
+    data.error = "Invalid table: " + table;
+    return;
+  }
+
+  if (!gr.get(sysId)) {
+    data.error = "Record not found";
+    return;
+  }
+
+  var titleField = (opts.title_field || "name").trim();
+  var imageField = (opts.image_field || "").trim();
+  var shortDescField = (opts.short_description_field || "").trim();
+  var longDescField = (opts.long_description_field || "").trim();
+
+  var metaFields = [];
+  var metaStr = (opts.meta_fields || "").trim();
+  if (metaStr) {
+    metaFields = metaStr.split(",").map(function (s) { return s.trim(); }).filter(function (s) { return !!s; });
+  }
+
+  // Parse link map JSON: {"author":{"page":"library_author"}, ...}
+  var linkMap = {};
+  try {
+    linkMap = JSON.parse((opts.link_map || "{}").trim() || "{}");
+  } catch (e) {
+    linkMap = {};
+  }
+  var linkParam = (opts.link_field_param || "sys_id").trim();
+
+  function safeDisplayValue(fieldName) {
+    if (!fieldName) return "";
+    if (!gr.isValidField(fieldName)) return "";
+    try { return gr.getDisplayValue(fieldName) || ""; }
+    catch (e) { return ""; }
+  }
+
+  function safeValue(fieldName) {
+    if (!fieldName) return "";
+    if (!gr.isValidField(fieldName)) return "";
+    try { return gr.getValue(fieldName) || ""; }
+    catch (e) { return ""; }
+  }
+
+  var rec = {
+    sys_id: gr.getUniqueValue(),
+    title: "",
+    image_url: "",
+    short_description: "",
+    long_description: "",
+    meta: [],
+    table: table
+  };
+
+  rec.title = safeDisplayValue(titleField) || gr.getDisplayValue() || "";
+
+  if (imageField && gr.isValidField(imageField)) {
+    rec.image_url = safeDisplayValue(imageField) || "";
+  }
+
+  if (shortDescField) rec.short_description = safeDisplayValue(shortDescField) || "";
+  if (longDescField) rec.long_description = safeDisplayValue(longDescField) || "";
+
+  for (var i = 0; i < metaFields.length; i++) {
+    var f = metaFields[i];
+    if (!gr.isValidField(f)) continue;
+
+    var element = gr.getElement(f);
+    if (!element) continue;
+
+    var label = element.getLabel();
+    var display = safeDisplayValue(f);
+    if (!display) continue;
+
+    var metaItem = {
+      field: f,
+      label: label,
+      value: display,
+      link: null
+    };
+
+    // If reference field AND mapped, make it linkable
+    // If mapped in link_map AND field has a value, make it linkable (robust)
+    var mapped = linkMap && linkMap[f] && linkMap[f].page;
+    if (mapped) {
+      var refSysId = safeValue(f); // for Reference fields this is the referenced sys_id
+      if (refSysId) {
+        metaItem.link = {
+          page: linkMap[f].page,
+          param: linkParam,
+          sys_id: refSysId
+        };
+      }
+    }
+
+
+    rec.meta.push(metaItem);
+  }
+
+  data.back = {
+    page: (opts.back_link_page || "").trim(),
+    label: (opts.back_link_label || "Back").trim()
+  };
+
+  data.record = rec;
+})();
+]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-21 12:20:33</sys_created_on>
+        <sys_id>0bc76d06932eb650f20b35befaba104c</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>Record Detail</sys_name>
+        <sys_package display_value="Library" source="x_662888_library">3d26a369936ef250f20b35befaba10e2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Library">3d26a369936ef250f20b35befaba10e2</sys_scope>
+        <sys_update_name>sp_widget_0bc76d06932eb650f20b35befaba104c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-21 14:14:31</sys_updated_on>
+        <template><![CDATA[<div class="lib-record-detail">
+
+  <div class="lib-error" ng-if="data.error">
+    {{data.error}}
+  </div>
+
+  <div ng-if="!data.error && data.record">
+
+    <div class="lib-back" ng-if="data.back && data.back.page">
+      <a class="lib-back-link" ng-href="?id={{::data.back.page}}">
+        ← {{::data.back.label}}
+      </a>
+    </div>
+
+    <div class="lib-detail-layout">
+      <div class="lib-detail-left">
+        <div class="lib-detail-cover">
+          <img ng-if="data.record.image_url"
+               ng-src="{{::data.record.image_url}}"
+               alt="{{::data.record.title}}" />
+          <div class="lib-detail-cover-placeholder" ng-if="!data.record.image_url"></div>
+        </div>
+      </div>
+
+      <div class="lib-detail-right">
+        <h1 class="lib-detail-title">{{::data.record.title}}</h1>
+
+        <div class="lib-detail-meta" ng-if="data.record.meta && data.record.meta.length">
+          <div class="lib-detail-meta-row" ng-repeat="m in data.record.meta track by m.field">
+            <div class="lib-detail-meta-label">{{::m.label}}</div>
+
+            <div class="lib-detail-meta-value">
+              <a ng-if="m.link"
+                 class="lib-meta-link"
+                 ng-href="?id={{::m.link.page}}&{{::m.link.param}}={{::m.link.sys_id}}">
+                {{::m.value}}
+              </a>
+
+              <span ng-if="!m.link">{{::m.value}}</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="lib-detail-desc" ng-if="data.record.long_description || data.record.short_description">
+          <div class="lib-detail-desc-short" ng-if="data.record.short_description">
+            {{::data.record.short_description}}
+          </div>
+
+          <div class="lib-detail-desc-long"
+               ng-if="data.record.long_description"
+               ng-bind-html="trustedHtml(data.record.long_description)">
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+]]></template>
+    </sp_widget>
+</record_update>

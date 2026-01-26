@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function() {  /* widget controller */  var c = this;};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.lib-grid {&#13;
+  display: grid;&#13;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));&#13;
+  gap: 12px;&#13;
+}&#13;
+&#13;
+.lib-card {&#13;
+  display: block;&#13;
+  text-decoration: none;&#13;
+  border: 1px solid rgba(0,0,0,0.12);&#13;
+  border-radius: 10px;&#13;
+  overflow: hidden;&#13;
+  background: #fff;&#13;
+}&#13;
+&#13;
+.lib-card:hover {&#13;
+  border-color: rgba(0,0,0,0.25);&#13;
+}&#13;
+&#13;
+.lib-card-image {&#13;
+  height: 240px;&#13;
+  background: rgba(0,0,0,0.04);&#13;
+  display: flex;&#13;
+  align-items: center;&#13;
+  justify-content: center;&#13;
+}&#13;
+&#13;
+.lib-card-image img {&#13;
+  max-height: 100%;&#13;
+  max-width: 100%;&#13;
+  object-fit: cover;&#13;
+}&#13;
+&#13;
+.lib-card-image-placeholder {&#13;
+  width: 60%;&#13;
+  height: 70%;&#13;
+  border: 1px dashed rgba(0,0,0,0.25);&#13;
+  border-radius: 8px;&#13;
+}&#13;
+&#13;
+.lib-card-body {&#13;
+  padding: 10px 12px 12px;&#13;
+}&#13;
+&#13;
+.lib-card-title {&#13;
+  font-weight: 600;&#13;
+  color: #1a1a1a;&#13;
+  line-height: 1.2;&#13;
+}&#13;
+&#13;
+.lib-card-subtitle {&#13;
+  margin-top: 6px;&#13;
+  font-size: 12px;&#13;
+  color: rgba(0,0,0,0.65);&#13;
+}&#13;
+&#13;
+.lib-empty, .lib-error {&#13;
+  padding: 12px;&#13;
+}&#13;
+</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>card_grid</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>Card Grid</name>
+        <option_schema>[{"default":"x_662888_library_book","name":"table","section":"other","default_value":"","label":"Table","type":"string"},{"default":"status=active","name":"query","section":"other","default_value":"","label":"Encoded query","type":"string"},{"default":50,"name":"limit","section":"other","default_value":"","label":"Limit","type":"integer"},{"default":"title","name":"order_by","section":"other","default_value":"","label":"Order by (field)","type":"string"},{"default":false,"name":"order_desc","section":"other","label":"Order descending","type":"boolean"},{"default":"title","name":"title_field","section":"other","default_value":"","label":"Title field","type":"string"},{"default":"","name":"subtitle_field","section":"other","default_value":"","label":"Subtitle field (optional)","type":"string"},{"default":"cover","name":"image_field","section":"other","default_value":"","label":"Image field (optional)","type":"string"},{"default":"library_book","name":"link_page","section":"other","default_value":"","label":"Link page (sp_page id)","type":"string"},{"default":"sys_id","name":"link_sys_id_param","section":"other","label":"Link sys_id param name","type":"string"},{"default":"No records found.","name":"empty_text","section":"other","label":"Empty state text","type":"string"}]</option_schema>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function () {
+  data.items = [];
+  data.error = "";
+
+  var opts = options || {};
+
+  var table = (opts.table || "").trim();
+  if (!table) {
+    data.error = "Missing option: table";
+    return;
+  }
+
+  // Basic safety: avoid allowing arbitrary tables outside your scope unless you want that.
+  // Comment out if you want true generic usage.
+	// if (table.indexOf("x_662888_library_") !== 0) {
+	// data.error = "Table not allowed";
+	// return;
+	// }
+
+
+  var query = (opts.query || "").trim();
+  var limit = parseInt(opts.limit, 10);
+  if (isNaN(limit) || limit <= 0) limit = 50;
+  if (limit > 200) limit = 200; // guardrail for portal performance
+
+  var orderBy = (opts.order_by || "").trim();
+  var orderDesc = (opts.order_desc === true || opts.order_desc === "true");
+
+  var titleField = (opts.title_field || "name").trim();
+  var subtitleField = (opts.subtitle_field || "").trim();
+  var imageField = (opts.image_field || "").trim();
+
+  var gr = new GlideRecord(table);
+  if (!gr.isValid()) {
+    data.error = "Invalid table: " + table;
+    return;
+  }
+
+  if (query) gr.addEncodedQuery(query);
+
+  if (orderBy) {
+    if (orderDesc) gr.orderByDesc(orderBy);
+    else gr.orderBy(orderBy);
+  }
+
+  gr.setLimit(limit);
+  gr.query();
+
+  while (gr.next()) {
+    var item = {
+      sys_id: gr.getUniqueValue(),
+      display: gr.getDisplayValue(),
+      title: "",
+      subtitle: "",
+      image_url: ""
+    };
+
+    // Title
+    if (titleField && gr.isValidField(titleField))
+      item.title = gr.getDisplayValue(titleField) || "";
+    else
+      item.title = gr.getDisplayValue() || "";
+
+    // Subtitle (optional)
+    if (subtitleField) {
+      // Supports simple dot-walk like "author.name" IF the platform resolves display value.
+      // If dot-walk fails, it falls back gracefully.
+      try {
+        item.subtitle = gr.getDisplayValue(subtitleField) || "";
+      } catch (e) {
+        item.subtitle = "";
+      }
+    }
+
+    // Image (optional): for Image fields, display value often returns a URL.
+    if (imageField && gr.isValidField(imageField)) {
+      var img = gr.getDisplayValue(imageField);
+      // If empty, keep empty. We'll show placeholder in HTML.
+      item.image_url = img || "";
+    }
+
+    data.items.push(item);
+  }
+})();
+]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-21 11:57:15</sys_created_on>
+        <sys_id>3db2a542932eb650f20b35befaba1076</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Card Grid</sys_name>
+        <sys_package display_value="Library" source="x_662888_library">3d26a369936ef250f20b35befaba10e2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Library">3d26a369936ef250f20b35befaba10e2</sys_scope>
+        <sys_update_name>sp_widget_3db2a542932eb650f20b35befaba1076</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-21 12:11:32</sys_updated_on>
+        <template><![CDATA[<div class="lib-card-grid" ng-if="!data.error">
+  <div class="lib-empty" ng-if="!data.items || data.items.length === 0">
+    {{::(options.empty_text || "No records found.")}}
+  </div>
+
+  <div class="lib-grid" ng-if="data.items && data.items.length > 0">
+    <a class="lib-card"
+       ng-repeat="item in data.items track by item.sys_id"
+       ng-href="?id={{::options.link_page}}&{{::(options.link_sys_id_param || 'sys_id')}}={{::item.sys_id}}">
+
+      <div class="lib-card-image">
+        <img ng-if="item.image_url" ng-src="{{::item.image_url}}" alt="{{::item.title}}" />
+        <div class="lib-card-image-placeholder" ng-if="!item.image_url"></div>
+      </div>
+
+      <div class="lib-card-body">
+        <div class="lib-card-title">{{::item.title}}</div>
+        <div class="lib-card-subtitle" ng-if="item.subtitle">{{::item.subtitle}}</div>
+      </div>
+
+    </a>
+  </div>
+</div>
+
+<div class="lib-error" ng-if="data.error">
+  {{data.error}}
+</div>
+]]></template>
+    </sp_widget>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>3db2a542932eb650f20b35befaba1076</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-21 11:57:15</sys_created_on>
+        <sys_id>b1b2e942932eb650f20b35befaba10a2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-21 11:57:15</sys_updated_on>
+        <table>sp_widget</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

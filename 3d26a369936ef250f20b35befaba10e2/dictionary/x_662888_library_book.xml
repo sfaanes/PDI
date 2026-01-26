@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="ed9304f193623650f20b35befaba108f" label="Book" max_length="40" name="x_662888_library_book" type="collection">
+        <element choice="1" label="Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Duplicate" sequence="2" value="duplicate"/>
+                <element inactive_on_update="false" label="Active" sequence="0" value="active"/>
+                <element inactive_on_update="false" label="Retired" sequence="1" value="retired"/>
+            </choice>
+        </element>
+        <element label="Cover" max_length="40" name="cover" type="user_image"/>
+        <element label="cover_url" max_length="500" name="cover_url" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Primary language" max_length="40" name="primary_language" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Norwegian Nynorsk" sequence="2" value="nn"/>
+                <element inactive_on_update="false" label="English" sequence="0" value="en"/>
+                <element inactive_on_update="false" label="Norwegian Bokmål" sequence="1" value="nb"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Work key" max_length="80" name="work_key" type="string"/>
+        <element label="Long Description" max_length="40" name="long_description" type="html"/>
+        <element attributes="encode_utf8=false" label="Author" max_length="32" name="author" reference="x_662888_library_author" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Original title" max_length="40" name="original_title" type="string"/>
+        <element label="Series" max_length="32" name="series" reference="x_662888_library_series" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Duplicate of" max_length="32" name="duplicate_of" reference="x_662888_library_book" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" display="true" label="Title" max_length="40" name="title" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Description" max_length="255" name="description" type="string"/>
+        <element label="First published year" max_length="40" name="first_published_year" type="integer"/>
+        <element attributes="encode_utf8=false" label="Genre" max_length="32" name="genre" reference="x_662888_library_genre" type="reference"/>
+        <index name="index">
+            <element name="author"/>
+        </index>
+        <index name="index2">
+            <element name="genre"/>
+        </index>
+        <index name="index3">
+            <element name="series"/>
+        </index>
+        <index name="index4" unique="true">
+            <element name="work_key"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="3001987d93a23650f20b35befaba101b" label="Reading Item" max_length="40" name="x_662888_library_reading_item" type="collection">
+        <element choice="1" label="Ownership" max_length="40" name="ownership" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Owned" sequence="0" value="owned"/>
+                <element inactive_on_update="false" label="Borrowed" sequence="1" value="borrowed"/>
+            </choice>
+        </element>
+        <element label="Start Date" max_length="40" name="start_date" type="glide_date"/>
+        <element label="Preferred Edition" max_length="32" name="preffered_edition" reference="x_662888_library_edition" type="reference"/>
+        <element choice="3" label="Visibility" max_length="40" name="visibility" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Public" sequence="1" value="public"/>
+                <element inactive_on_update="false" label="Private" sequence="0" value="private"/>
+            </choice>
+        </element>
+        <element label="Book" max_length="32" name="book" reference="x_662888_library_book" type="reference"/>
+        <element label="Notes" max_length="128" name="notes" type="string"/>
+        <element default="0" function_definition="0" label="Percent Complete" max_length="38" name="percent_complete" type="percent_complete"/>
+        <element choice="1" label="Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Read" sequence="1" value="read"/>
+                <element inactive_on_update="false" label="Want to Read" sequence="0" value="want_to_read"/>
+                <element inactive_on_update="false" label="Currently Reading" sequence="2" value="currently_reading"/>
+            </choice>
+        </element>
+        <element label="User" max_length="32" name="user" reference="sys_user" type="reference"/>
+        <element choice="1" label="Priority" max_length="40" name="priority" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="High" sequence="0" value="3"/>
+                <element inactive_on_update="false" label="Medium" sequence="1" value="2"/>
+                <element inactive_on_update="false" label="Low" sequence="2" value="1"/>
+            </choice>
+        </element>
+        <element label="End date" max_length="40" name="end_date" type="glide_date"/>
+        <element choice="1" label="Personal Rating" max_length="40" name="personal_rating" type="integer">
+            <choice>
+                <element inactive_on_update="false" label="2" sequence="1" value="2"/>
+                <element inactive_on_update="false" label="1" sequence="0" value="1"/>
+                <element inactive_on_update="false" label="5" sequence="4" value="5"/>
+                <element inactive_on_update="false" label="3" sequence="2" value="3"/>
+                <element inactive_on_update="false" label="4" sequence="3" value="4"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="book"/>
+        </index>
+        <index name="index2">
+            <element name="preffered_edition"/>
+        </index>
+        <index name="index3" unique="true">
+            <element name="user"/>
+            <element name="book"/>
+        </index>
+    </element>
+</database>

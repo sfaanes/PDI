@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="2c1508b593623650f20b35befaba103d" label="Book Genre M2M" max_length="40" name="x_662888_library_book_genre_m2m" type="collection">
+        <element attributes="encode_utf8=false" label="Genre" max_length="32" name="genre" reference="x_662888_library_genre" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Display Name" max_length="40" name="display_name" type="string"/>
+        <element attributes="encode_utf8=false" label="Book" max_length="32" name="book" reference="x_662888_library_book" type="reference"/>
+        <index name="index">
+            <element name="book"/>
+        </index>
+        <index name="index2">
+            <element name="genre"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="3072883193623650f20b35befaba1052" label="Genre" max_length="40" name="x_662888_library_genre" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Parent genre" max_length="40" name="parent_genre" reference="x_662888_library_genre" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Name" max_length="40" name="name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Description" max_length="128" name="description" type="string"/>
+    </element>
+</database>

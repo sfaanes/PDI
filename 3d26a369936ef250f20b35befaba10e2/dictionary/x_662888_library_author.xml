@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="09120cfd93223650f20b35befaba103a" label="Author" max_length="40" name="x_662888_library_author" type="collection">
+        <element attributes="edge_encryption_enabled=true" display="true" label="Name" max_length="40" name="name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Duplicate of" max_length="32" name="duplicate_of" reference="x_662888_library_author" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Sort name" max_length="40" name="sort_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Birth year" max_length="40" name="birth_year" type="glide_date"/>
+        <element label="Photo" max_length="40" name="photo" type="user_image"/>
+        <element attributes="edge_encryption_enabled=true" label="Author key" max_length="40" name="author_key" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Bio" max_length="255" name="bio" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Duplicate" sequence="2" value="duplicate"/>
+                <element inactive_on_update="false" label="Active" sequence="0" value="active"/>
+                <element inactive_on_update="false" label="Retired" sequence="1" value="retired"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Death year" max_length="40" name="death_year" type="glide_date"/>
+        <index name="index" unique="true">
+            <element name="author_key"/>
+        </index>
+    </element>
+</database>

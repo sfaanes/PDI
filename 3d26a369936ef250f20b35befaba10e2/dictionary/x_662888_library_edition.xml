@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="8f04043593623650f20b35befaba1088" label="Edition" max_length="40" name="x_662888_library_edition" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="ISBN-10" max_length="40" name="isbn_10" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Edition key" max_length="40" name="edition_key" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Checksum" max_length="40" name="checksum" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Book" max_length="40" name="book" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Source" max_length="40" name="source" type="string"/>
+        <element attributes="encode_utf8=false" label="Publisher" max_length="32" name="publisher" reference="x_662888_library_publisher" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Language" max_length="40" name="language" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="paperback" label="Format" max_length="40" name="format" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Paperback" value="paperback"/>
+                <element inactive_on_update="false" label="Digital" value="digital"/>
+                <element inactive_on_update="false" label="Pocket" value="pocket"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="ISBN-13" max_length="40" name="isbn_13" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Edition title" max_length="40" name="edition_title" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Raw payload (JSON)" max_length="40" name="raw_payload_json" type="string"/>
+        <element label="Page count" max_length="40" name="page_count" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="Publish date" max_length="40" name="publish_date" type="glide_date"/>
+        <index name="index">
+            <element name="publisher"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="41a4487593623650f20b35befaba1004" label="Book Author M2M" max_length="40" name="x_662888_library_book_author_m2m" type="collection">
+        <element attributes="encode_utf8=false" label="Book" max_length="32" name="book" reference="x_662888_library_book" type="reference"/>
+        <element attributes="encode_utf8=false" label="Author" max_length="32" name="author" reference="x_662888_library_author" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Role" max_length="40" name="author_role" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Co-author" value="co_author"/>
+                <element inactive_on_update="false" label="Editor" value="editor"/>
+                <element inactive_on_update="false" label="Translator" value="translator"/>
+                <element inactive_on_update="false" label="Author" value="author"/>
+                <element inactive_on_update="false" label="Illustrator" value="illustrator"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="author"/>
+        </index>
+        <index name="index2">
+            <element name="book"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-20 10:25:14</sys_created_on>
+        <sys_id>4c14843593623650f20b35befaba10b5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_662888_library_edition.x_662888_library.admin</sys_name>
+        <sys_package display_value="Library" source="x_662888_library">3d26a369936ef250f20b35befaba10e2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Library">3d26a369936ef250f20b35befaba10e2</sys_scope>
+        <sys_security_acl display_value="x_662888_library_edition">8014843593623650f20b35befaba1097</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_4c14843593623650f20b35befaba10b5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-20 10:25:14</sys_updated_on>
+        <sys_user_role display_value="x_662888_library.admin" name="x_662888_library.admin">7926a369936ef250f20b35befaba10f3</sys_user_role>
+    </sys_security_acl_role>
+</record_update>

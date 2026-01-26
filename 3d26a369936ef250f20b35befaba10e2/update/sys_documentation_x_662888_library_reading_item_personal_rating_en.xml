@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="personal_rating" label="Personal Rating" language="en" table="x_662888_library_reading_item">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>personal_rating</element>
+            <help/>
+            <hint/>
+            <label>Personal Rating</label>
+            <language>en</language>
+            <name>x_662888_library_reading_item</name>
+            <plural/>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-01-20 11:28:35</sys_created_on>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_name>Personal Rating</sys_name>
+            <sys_package display_value="Library" source="x_662888_library">3d26a369936ef250f20b35befaba10e2</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Library">3d26a369936ef250f20b35befaba10e2</sys_scope>
+            <sys_update_name>sys_documentation_x_662888_library_reading_item_personal_rating_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-01-20 11:28:37</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="5b1304b193623650f20b35befaba1079" label="Publisher" max_length="40" name="x_662888_library_publisher" type="collection">
+        <element attributes="encode_utf8=false" label="Country" max_length="32" name="country" reference="core_country" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Name" max_length="40" name="name" type="string"/>
+        <element label="Email" max_length="40" name="email" type="email"/>
+        <element attributes="edge_encryption_enabled=true" label="Address" max_length="40" name="address" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Website" max_length="1024" name="website" type="url"/>
+        <element label="Phone" max_length="40" name="phone" type="phone_number_e164"/>
+        <index name="index">
+            <element name="country"/>
+        </index>
+    </element>
+</database>

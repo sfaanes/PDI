@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="c137f83993e63650f20b35befaba10af" label="Book Series M2M" max_length="40" name="x_662888_library_book_series_m2m" type="collection">
+        <element label="Book" max_length="32" name="book" reference="x_662888_library_book" type="reference"/>
+        <element label="Series" max_length="32" name="series" reference="x_662888_library_series" type="reference"/>
+        <element label="Notes" max_length="40" name="notes" type="string"/>
+        <element attributes="ORDERBYsequence_label" label="Sequence" max_length="40" name="sequence_label" type="string"/>
+        <index name="index">
+            <element name="series"/>
+        </index>
+    </element>
+</database>

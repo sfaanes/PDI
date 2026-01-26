@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section action="DELETE" caption="" section_id="d2f8600e9326b650f20b35befaba1068" sys_domain="global" table="x_662888_library_x_library_m2m_book_to_lib" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-01-21 07:44:58</sys_created_on>
+            <sys_id>16f8600e9326b650f20b35befaba108b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_662888_library_x_library_m2m_book_to_lib" sys_domain="global" view="Default view">d2f8600e9326b650f20b35befaba1068</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-01-21 07:44:58</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_662888_library_author</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-01-21 07:44:58</sys_created_on>
+            <sys_id>92f8600e9326b650f20b35befaba108c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_662888_library_x_library_m2m_book_to_lib" sys_domain="global" view="Default view">d2f8600e9326b650f20b35befaba1068</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-01-21 07:44:58</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-01-21 07:44:58</sys_created_on>
+            <sys_id>12f8600e9326b650f20b35befaba108d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_662888_library_x_library_m2m_book_to_lib" sys_domain="global" view="Default view">d2f8600e9326b650f20b35befaba1068</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-01-21 07:44:58</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_662888_library_book</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-01-21 07:44:58</sys_created_on>
+            <sys_id>9ef8600e9326b650f20b35befaba108d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_662888_library_x_library_m2m_book_to_lib" sys_domain="global" view="Default view">d2f8600e9326b650f20b35befaba1068</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-01-21 07:44:58</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-01-21 07:44:58</sys_created_on>
+            <sys_id>1ef8600e9326b650f20b35befaba108e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_662888_library_x_library_m2m_book_to_lib" sys_domain="global" view="Default view">d2f8600e9326b650f20b35befaba1068</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-01-21 07:44:58</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_section action="DELETE">
+            <caption/>
+            <header>false</header>
+            <name>x_662888_library_x_library_m2m_book_to_lib</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-01-21 07:44:58</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d2f8600e9326b650f20b35befaba1068</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_662888_library_x_library_m2m_book_to_lib</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Library" source="x_662888_library">3d26a369936ef250f20b35befaba10e2</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Library">3d26a369936ef250f20b35befaba10e2</sys_scope>
+            <sys_update_name>sys_ui_section_d2f8600e9326b650f20b35befaba1068</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-01-21 07:44:58</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Library">3d26a369936ef250f20b35befaba10e2</application>
+        <file_path/>
+        <instance_id>5a4b11b43bf0a294677f04e0b5e45ab5</instance_id>
+        <instance_name>dev319157</instance_name>
+        <name>sys_ui_section_d2f8600e9326b650f20b35befaba1068</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="" section_id="d2f8600e9326b650f20b35befaba1068" sys_domain="global" table="x_662888_library_x_library_m2m_book_to_lib" version="3" view=""><sys_ui_element action="INSERT_OR_UPDATE"><element>.begin_split</element><position>0</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-01-21 07:44:58</sys_created_on><sys_id>16f8600e9326b650f20b35befaba108b</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_662888_library_x_library_m2m_book_to_lib" sys_domain="global" view="Default view">d2f8600e9326b650f20b35befaba1068</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-01-21 07:44:58</sys_updated_on><sys_user/><type>.begin_split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>x_662888_library_author</element><position>1</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-01-21 07:44:58</sys_created_on><sys_id>92f8600e9326b650f20b35befaba108c</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_662888_library_x_library_m2m_book_to_lib" sys_domain="global" view="Default view">d2f8600e9326b650f20b35befaba1068</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-01-21 07:44:58</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.split</element><position>2</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-01-21 07:44:58</sys_created_on><sys_id>12f8600e9326b650f20b35befaba108d</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_662888_library_x_library_m2m_book_to_lib" sys_domain="global" view="Default view">d2f8600e9326b650f20b35befaba1068</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-01-21 07:44:58</sys_updated_on><sys_user/><type>.split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>x_662888_library_book</element><position>3</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-01-21 07:44:58</sys_created_on><sys_id>9ef8600e9326b650f20b35befaba108d</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_662888_library_x_library_m2m_book_to_lib" sys_domain="global" view="Default view">d2f8600e9326b650f20b35befaba1068</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-01-21 07:44:58</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.end_split</element><position>4</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-01-21 07:44:58</sys_created_on><sys_id>1ef8600e9326b650f20b35befaba108e</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_662888_library_x_library_m2m_book_to_lib" sys_domain="global" view="Default view">d2f8600e9326b650f20b35befaba1068</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-01-21 07:44:58</sys_updated_on><sys_user/><type>.end_split</type></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption/><header>false</header><name>x_662888_library_x_library_m2m_book_to_lib</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-01-21 07:44:58</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>d2f8600e9326b650f20b35befaba1068</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_662888_library_x_library_m2m_book_to_lib</sys_name><sys_overrides/><sys_package display_value="Library" source="x_662888_library">3d26a369936ef250f20b35befaba10e2</sys_package><sys_policy/><sys_scope display_value="Library">3d26a369936ef250f20b35befaba10e2</sys_scope><sys_update_name>sys_ui_section_d2f8600e9326b650f20b35befaba1068</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-01-21 07:44:58</sys_updated_on><sys_user/><title>true</title><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+        <payload_hash>-400563849</payload_hash>
+        <record_name>x_library_m2m_Books_Authors</record_name>
+        <reverted_from/>
+        <source>b126a369936ef250f20b35befaba10e8</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-21 07:44:59</sys_created_on>
+        <sys_id>e6f8600e9326b650f20b35befaba1092</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19bdf838cc20000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-21 07:44:59</sys_updated_on>
+        <type>Form Layout</type>
+        <update_guid>aaf8600e8a26b650a5cdabe791add891</update_guid>
+        <update_guid_history>aaf8600e8a26b650a5cdabe791add891:-400563849,16f8600e7626b650ff0a33bf137c236d:1190717512</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-21 11:14:44</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_section">sys_ui_section</sys_db_object>
+        <sys_id>9a88ea09ee22434894f32181f51f5131</sys_id>
+        <sys_metadata>d2f8600e9326b650f20b35befaba1068</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_662888_library_x_library_m2m_book_to_lib</sys_name>
+        <sys_package display_value="Library" source="x_662888_library">3d26a369936ef250f20b35befaba10e2</sys_package>
+        <sys_parent display_value="">89e86cca9326b650f20b35befaba10c1</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Library">3d26a369936ef250f20b35befaba10e2</sys_scope>
+        <sys_scope_delete display_value="">916d9aa6ba0644149f24ce6dc03f8f24</sys_scope_delete>
+        <sys_update_name>sys_ui_section_d2f8600e9326b650f20b35befaba1068</sys_update_name>
+        <sys_update_version display_value="sys_ui_section_d2f8600e9326b650f20b35befaba1068">e6f8600e9326b650f20b35befaba1092</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-21 11:14:44</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

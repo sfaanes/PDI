@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>1000</order>
+        <role display_value="x_662888_library.user" name="x_662888_library.user">c626a369936ef250f20b35befaba10ff</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-20 08:14:33</sys_created_on>
+        <sys_id>4226e369936ef250f20b35befaba1002</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>c626a369936ef250f20b35befaba10ff</sys_name>
+        <sys_package display_value="Library" source="x_662888_library">3d26a369936ef250f20b35befaba10e2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Library">3d26a369936ef250f20b35befaba10e2</sys_scope>
+        <sys_update_name>sys_embedded_help_role_4226e369936ef250f20b35befaba1002</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-20 08:14:33</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>
