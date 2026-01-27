@@ -10,7 +10,7 @@
         <css/>
         <glyph/>
         <id/>
-        <order>2</order>
+        <order>1</order>
         <placeholder_dimensions>{&#13;	"mobile": {&#13;		"height": "250px",&#13;		"width": "100%"&#13;	},&#13;	"desktop": {&#13;		"height": "250px",&#13;		"width": "100%"&#13;	},&#13;	"tablet": {&#13;		"height": "250px",&#13;		"width": "100%"&#13;	}&#13;}</placeholder_dimensions>
         <placeholder_dimensions_script><![CDATA[function evaluateConfig(options) { return {	"mobile": {		"height": "250px",		"width": "100%"	},	"desktop": {		"height": "250px",		"width": "100%"	},	"tablet": {		"height": "250px",		"width": "100%"	}}; }]]></placeholder_dimensions_script>
         <placeholder_template>&lt;!-- 
@@ -32,68 +32,132 @@
         <roles/>
         <short_description/>
         <size>md</size>
-        <sp_column display_value="1">f067a1ca932eb650f20b35befaba1018</sp_column>
-        <sp_widget display_value="Card Grid">3db2a542932eb650f20b35befaba1076</sp_widget>
+        <sp_column display_value="1">9fa4f727932e3210f20b35befaba1053</sp_column>
+        <sp_widget display_value="books_browser">39663ba7932e3210f20b35befaba10de</sp_widget>
         <sys_class_name>sp_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-01-21 12:17:43</sys_created_on>
-        <sys_id>6d67a1ca932eb650f20b35befaba101d</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_created_on>2026-01-26 14:33:58</sys_created_on>
+        <sys_id>0a86f32b932e3210f20b35befaba10ca</sys_id>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name/>
         <sys_package display_value="Library" source="x_662888_library">3d26a369936ef250f20b35befaba10e2</sys_package>
         <sys_policy/>
         <sys_scope display_value="Library">3d26a369936ef250f20b35befaba10e2</sys_scope>
-        <sys_update_name>sp_instance_6d67a1ca932eb650f20b35befaba101d</sys_update_name>
+        <sys_update_name>sp_instance_0a86f32b932e3210f20b35befaba10ca</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-01-26 14:34:55</sys_updated_on>
+        <sys_updated_on>2026-01-26 14:47:05</sys_updated_on>
         <title/>
         <url/>
         <widget_parameters><![CDATA[{
-	"table": {
+	"widget_title": {
+		"value": "More in this series",
+		"displayValue": "More in this series"
+	},
+	"show_title": {
+		"value": "true",
+		"displayValue": "true"
+	},
+	"layout": {
+		"value": "carousel",
+		"displayValue": "carousel"
+	},
+	"dense": {
+		"value": "false",
+		"displayValue": "false"
+	},
+	"mode": {
+		"value": "series_from_book_page",
+		"displayValue": "series_from_book_page"
+	},
+	"book_table": {
 		"value": "x_662888_library_book",
 		"displayValue": "x_662888_library_book"
+	},
+	"sys_id_param": {
+		"value": "",
+		"displayValue": ""
 	},
 	"query": {
 		"value": "",
 		"displayValue": ""
 	},
-	"limit": {
-		"value": 60,
-		"displayValue": "60"
-	},
 	"order_by": {
-		"value": "title",
-		"displayValue": "title"
+		"value": "",
+		"displayValue": ""
 	},
 	"order_desc": {
-		"value": "true",
-		"displayValue": "true"
+		"value": "",
+		"displayValue": ""
+	},
+	"limit": {
+		"value": null,
+		"displayValue": ""
 	},
 	"title_field": {
-		"value": "",
-		"displayValue": ""
+		"value": "name",
+		"displayValue": "name"
 	},
 	"subtitle_field": {
-		"value": "",
-		"displayValue": ""
+		"value": "first_published_year",
+		"displayValue": "first_published_year"
 	},
 	"image_field": {
-		"value": "",
-		"displayValue": ""
+		"value": "cover",
+		"displayValue": "cover"
 	},
 	"link_page": {
 		"value": "library_book",
 		"displayValue": "library_book"
 	},
-	"link_sys_id_param": {
-		"value": "",
-		"displayValue": ""
+	"link_param": {
+		"value": "sys_id",
+		"displayValue": "sys_id"
 	},
 	"empty_text": {
 		"value": "",
 		"displayValue": ""
+	},
+	"m2m_table_series": {
+		"value": "x_662888_library_book_series_m2m",
+		"displayValue": "x_662888_library_book_series_m2m"
+	},
+	"m2m_series_field": {
+		"value": "series",
+		"displayValue": "series"
+	},
+	"m2m_book_field": {
+		"value": "book",
+		"displayValue": "book"
+	},
+	"m2m_sequence_field": {
+		"value": "sequence_label",
+		"displayValue": "sequence_label"
+	},
+	"book_series_field": {
+		"value": "series",
+		"displayValue": "series"
+	},
+	"show_sequence_badge": {
+		"value": "true",
+		"displayValue": "true"
+	},
+	"show_series_link": {
+		"value": "true",
+		"displayValue": "true"
+	},
+	"series_link_page": {
+		"value": "library_series",
+		"displayValue": "library_series"
+	},
+	"carousel_visible": {
+		"value": 4,
+		"displayValue": "4"
+	},
+	"carousel_step": {
+		"value": 2,
+		"displayValue": "2"
 	}
 }]]></widget_parameters>
     </sp_instance>
-    <sys_translated_text action="delete_multiple" query="documentkey=6d67a1ca932eb650f20b35befaba101d"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=0a86f32b932e3210f20b35befaba10ca"/>
 </record_update>

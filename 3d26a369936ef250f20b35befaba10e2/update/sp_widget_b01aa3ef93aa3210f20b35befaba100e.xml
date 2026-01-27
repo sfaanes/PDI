@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function() {
+  /* widget controller */
+  var c = this;
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.lib-grid {&#13;
+  display: grid;&#13;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));&#13;
+  gap: 12px;&#13;
+}&#13;
+&#13;
+.lib-series-link {&#13;
+  padding: 0 0 10px 0;&#13;
+}&#13;
+&#13;
+.lib-card {&#13;
+  display: block;&#13;
+  text-decoration: none;&#13;
+  border: 1px solid rgba(0,0,0,0.12);&#13;
+  border-radius: 10px;&#13;
+  overflow: hidden;&#13;
+  background: #fff;&#13;
+  position: relative;&#13;
+}&#13;
+&#13;
+.lib-card:hover {&#13;
+  border-color: rgba(0,0,0,0.25);&#13;
+}&#13;
+&#13;
+.lib-card-image {&#13;
+  height: 240px;&#13;
+  background: rgba(0,0,0,0.04);&#13;
+  display: flex;&#13;
+  align-items: center;&#13;
+  justify-content: center;&#13;
+  position: relative;&#13;
+}&#13;
+&#13;
+.lib-card-image img {&#13;
+  max-height: 100%;&#13;
+  max-width: 100%;&#13;
+  object-fit: cover;&#13;
+}&#13;
+&#13;
+.lib-card-image-placeholder {&#13;
+  width: 60%;&#13;
+  height: 70%;&#13;
+  border: 1px dashed rgba(0,0,0,0.25);&#13;
+  border-radius: 8px;&#13;
+}&#13;
+&#13;
+.lib-seq-badge {&#13;
+  position: absolute;&#13;
+  top: 10px;&#13;
+  left: 10px;&#13;
+  padding: 6px 8px;&#13;
+  border-radius: 10px;&#13;
+  background: rgba(255,255,255,0.9);&#13;
+  border: 1px solid rgba(0,0,0,0.12);&#13;
+  font-weight: 700;&#13;
+  font-size: 12px;&#13;
+  color: rgba(0,0,0,0.85);&#13;
+}&#13;
+&#13;
+.lib-card-body {&#13;
+  padding: 10px 12px 12px;&#13;
+}&#13;
+&#13;
+.lib-card-title {&#13;
+  font-weight: 600;&#13;
+  color: #1a1a1a;&#13;
+  line-height: 1.2;&#13;
+}&#13;
+&#13;
+.lib-card-subtitle {&#13;
+  margin-top: 6px;&#13;
+  font-size: 12px;&#13;
+  color: rgba(0,0,0,0.65);&#13;
+}&#13;
+&#13;
+.lib-meta-link {&#13;
+  text-decoration: none;&#13;
+}&#13;
+&#13;
+.lib-meta-link:hover {&#13;
+  text-decoration: underline;&#13;
+}&#13;
+&#13;
+.lib-empty, .lib-error {&#13;
+  padding: 12px;&#13;
+}&#13;
+</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>series_books</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>Series Books</name>
+        <option_schema>[&#13;
+  { "name": "mode", "label": "Mode (series|book)", "type": "string", "default": "series" },&#13;
+&#13;
+  { "name": "book_table", "label": "Book table", "type": "string", "default": "x_662888_library_book" },&#13;
+  { "name": "m2m_table", "label": "M2M table (Series↔Book)", "type": "string", "default": "x_662888_library_book_series_m2m" },&#13;
+&#13;
+  { "name": "m2m_series_field", "label": "M2M: Series field", "type": "string", "default": "series" },&#13;
+  { "name": "m2m_book_field", "label": "M2M: Book field", "type": "string", "default": "book" },&#13;
+  { "name": "m2m_sequence_field", "label": "M2M: Sequence field", "type": "string", "default": "sequence_number" },&#13;
+&#13;
+  { "name": "sys_id_param", "label": "URL sys_id param", "type": "string", "default": "sys_id" },&#13;
+  { "name": "book_series_field", "label": "Book: Series reference field", "type": "string", "default": "series" },&#13;
+&#13;
+  { "name": "title_field", "label": "Book title field", "type": "string", "default": "title" },&#13;
+  { "name": "subtitle_field", "label": "Book subtitle field (optional)", "type": "string", "default": "author" },&#13;
+  { "name": "image_field", "label": "Book image field (optional)", "type": "string", "default": "cover" },&#13;
+&#13;
+  { "name": "link_page", "label": "Book detail page id", "type": "string", "default": "library_book" },&#13;
+  { "name": "link_param", "label": "Book detail sys_id param", "type": "string", "default": "sys_id" },&#13;
+&#13;
+  { "name": "series_link_page", "label": "Series detail page id", "type": "string", "default": "library_series" },&#13;
+  { "name": "show_series_link", "label": "Show series link (only in book mode)", "type": "boolean", "default": true },&#13;
+&#13;
+  { "name": "limit", "label": "Max books", "type": "integer", "default": 50 },&#13;
+  { "name": "show_sequence_badge", "label": "Show sequence badge", "type": "boolean", "default": true },&#13;
+  { "name": "empty_text", "label": "Empty text", "type": "string", "default": "No books found in this series yet." }&#13;
+]&#13;
+</option_schema>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function () {
+  data.error = "";
+  data.items = [];
+  data.series = { sys_id: "", display: "" };
+
+  var opts = options || {};
+
+  var mode = (opts.mode || "series").trim(); // "series" or "book"
+
+  var bookTable = (opts.book_table || "").trim();
+  var m2mTable = (opts.m2m_table || "").trim();
+
+  var m2mSeriesField = (opts.m2m_series_field || "series").trim();
+  var m2mBookField = (opts.m2m_book_field || "book").trim();
+  var m2mSeqField = (opts.m2m_sequence_field || "sequence_number").trim();
+
+  var sysIdParam = (opts.sys_id_param || "sys_id").trim();
+  var urlSysId = ("" + ($sp.getParameter(sysIdParam) || "")).trim();
+
+  var bookSeriesField = (opts.book_series_field || "series").trim();
+
+  var titleField = (opts.title_field || "title").trim();
+  var subtitleField = (opts.subtitle_field || "").trim();
+  var imageField = (opts.image_field || "").trim();
+
+  var limit = parseInt(opts.limit, 10);
+  if (isNaN(limit) || limit <= 0) limit = 50;
+  if (limit > 200) limit = 200;
+
+  data.ui = {
+    link_page: (opts.link_page || "library_book").trim(),
+    link_param: (opts.link_param || "sys_id").trim(),
+    series_link_page: (opts.series_link_page || "library_series").trim(),
+    show_series_link: (opts.show_series_link === true || opts.show_series_link === "true"),
+    show_sequence_badge: (opts.show_sequence_badge === true || opts.show_sequence_badge === "true"),
+    empty_text: (opts.empty_text || "No records found.").trim()
+  };
+
+  if (!urlSysId) {
+    data.error = "Missing sys_id in URL";
+    return;
+  }
+  if (!m2mTable || !bookTable) {
+    data.error = "Missing option: m2m_table or book_table";
+    return;
+  }
+
+  // Resolve series sys_id
+  var seriesSysId = "";
+  if (mode === "series") {
+    seriesSysId = urlSysId;
+  } else if (mode === "book") {
+    // URL sys_id is a book sys_id -> fetch its series reference
+    var b = new GlideRecord(bookTable);
+    if (!b.isValid()) {
+      data.error = "Invalid book table: " + bookTable;
+      return;
+    }
+    if (!b.get(urlSysId)) {
+      data.error = "Book not found";
+      return;
+    }
+    if (!b.isValidField(bookSeriesField)) {
+      data.error = "Invalid book_series_field: " + bookSeriesField;
+      return;
+    }
+    seriesSysId = ("" + b.getValue(bookSeriesField)).trim();
+    data.series.sys_id = seriesSysId;
+    data.series.display = b.getDisplayValue(bookSeriesField) || "";
+    if (!seriesSysId) {
+      // Book has no series -> empty state, not an error
+      return;
+    }
+  } else {
+    data.error = "Invalid mode: " + mode;
+    return;
+  }
+
+  // Query M2M rows for this series
+  var m2m = new GlideRecord(m2mTable);
+  if (!m2m.isValid()) {
+    data.error = "Invalid M2M table: " + m2mTable;
+    return;
+  }
+  if (!m2m.isValidField(m2mSeriesField) || !m2m.isValidField(m2mBookField)) {
+    data.error = "Invalid M2M field config";
+    return;
+  }
+
+  m2m.addQuery(m2mSeriesField, seriesSysId);
+  if (m2mSeqField && m2m.isValidField(m2mSeqField)) m2m.orderBy(m2mSeqField);
+  else m2m.orderBy("sys_created_on");
+  m2m.setLimit(limit);
+  m2m.query();
+
+  var order = [];
+  var bookIds = [];
+  var seqByBook = {};
+
+  while (m2m.next()) {
+    var bId = ("" + m2m.getValue(m2mBookField)).trim();
+    if (!bId) continue;
+
+    var seq = "";
+    if (m2mSeqField && m2m.isValidField(m2mSeqField)) seq = ("" + m2m.getValue(m2mSeqField)).trim();
+
+    if (!seqByBook[bId]) {
+      seqByBook[bId] = seq;
+      bookIds.push(bId);
+      order.push({ bookSysId: bId });
+    }
+  }
+
+  if (bookIds.length === 0) return;
+
+  var book = new GlideRecord(bookTable);
+  if (!book.isValid()) {
+    data.error = "Invalid book table: " + bookTable;
+    return;
+  }
+
+  book.addQuery("sys_id", "IN", bookIds.join(","));
+  book.query();
+
+  var bookMap = {};
+  while (book.next()) {
+    var id = book.getUniqueValue();
+    var item = {
+      sys_id: id,
+      title: "",
+      subtitle: "",
+      image_url: "",
+      sequence: seqByBook[id] || ""
+    };
+
+    if (titleField && book.isValidField(titleField)) item.title = book.getDisplayValue(titleField) || "";
+    else item.title = book.getDisplayValue() || "";
+
+    if (subtitleField) {
+      try { item.subtitle = book.getDisplayValue(subtitleField) || ""; } catch (e) { item.subtitle = ""; }
+    }
+
+    if (imageField && book.isValidField(imageField)) item.image_url = book.getDisplayValue(imageField) || "";
+
+    bookMap[id] = item;
+  }
+
+  for (var i = 0; i < order.length; i++) {
+    var key = order[i].bookSysId;
+    if (bookMap[key]) data.items.push(bookMap[key]);
+  }
+
+  // Series display (if we're in series mode, we can still set it via a quick lookup)
+  if (mode === "series") {
+    data.series.sys_id = seriesSysId;
+  }
+})();
+]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-26 13:40:35</sys_created_on>
+        <sys_id>b01aa3ef93aa3210f20b35befaba100e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Series Books</sys_name>
+        <sys_package display_value="Library" source="x_662888_library">3d26a369936ef250f20b35befaba10e2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Library">3d26a369936ef250f20b35befaba10e2</sys_scope>
+        <sys_update_name>sp_widget_b01aa3ef93aa3210f20b35befaba100e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-26 14:23:51</sys_updated_on>
+        <template><![CDATA[<div class="lib-series-books">
+
+  <div class="lib-error" ng-if="data.error">
+    {{data.error}}
+  </div>
+
+  <div class="lib-series-link"
+       ng-if="!data.error && data.ui.show_series_link && data.series && data.series.sys_id && data.ui.series_link_page">
+    <a class="lib-meta-link" ng-href="?id={{::data.ui.series_link_page}}&sys_id={{::data.series.sys_id}}">
+      View series<span ng-if="data.series.display">: {{::data.series.display}}</span>
+    </a>
+  </div>
+
+  <div class="lib-empty" ng-if="!data.error && (!data.items || data.items.length === 0)">
+    {{::data.ui.empty_text}}
+  </div>
+
+  <div class="lib-grid" ng-if="!data.error && data.items && data.items.length > 0">
+    <a class="lib-card"
+       ng-repeat="item in data.items track by item.sys_id"
+       ng-href="?id={{::data.ui.link_page}}&{{::data.ui.link_param}}={{::item.sys_id}}">
+
+      <div class="lib-card-image">
+        <img ng-if="item.image_url" ng-src="{{::item.image_url}}" alt="{{::item.title}}" />
+        <div class="lib-card-image-placeholder" ng-if="!item.image_url"></div>
+
+        <div class="lib-seq-badge"
+             ng-if="data.ui.show_sequence_badge && item.sequence">
+          #{{::item.sequence}}
+        </div>
+      </div>
+
+      <div class="lib-card-body">
+        <div class="lib-card-title">{{::item.title}}</div>
+        <div class="lib-card-subtitle" ng-if="item.subtitle">{{::item.subtitle}}</div>
+      </div>
+
+    </a>
+  </div>
+
+</div>
+]]></template>
+    </sp_widget>
+</record_update>

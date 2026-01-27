@@ -10,7 +10,7 @@
         <css/>
         <glyph/>
         <id/>
-        <order>2</order>
+        <order>1</order>
         <placeholder_dimensions>{&#13;	"mobile": {&#13;		"height": "250px",&#13;		"width": "100%"&#13;	},&#13;	"desktop": {&#13;		"height": "250px",&#13;		"width": "100%"&#13;	},&#13;	"tablet": {&#13;		"height": "250px",&#13;		"width": "100%"&#13;	}&#13;}</placeholder_dimensions>
         <placeholder_dimensions_script><![CDATA[function evaluateConfig(options) { return {	"mobile": {		"height": "250px",		"width": "100%"	},	"desktop": {		"height": "250px",		"width": "100%"	},	"tablet": {		"height": "250px",		"width": "100%"	}}; }]]></placeholder_dimensions_script>
         <placeholder_template>&lt;!-- 
@@ -33,67 +33,22 @@
         <short_description/>
         <size>md</size>
         <sp_column display_value="1">f067a1ca932eb650f20b35befaba1018</sp_column>
-        <sp_widget display_value="Card Grid">3db2a542932eb650f20b35befaba1076</sp_widget>
+        <sp_widget display_value="books_browser">39663ba7932e3210f20b35befaba10de</sp_widget>
         <sys_class_name>sp_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-01-21 12:17:43</sys_created_on>
-        <sys_id>6d67a1ca932eb650f20b35befaba101d</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_created_on>2026-01-26 14:34:19</sys_created_on>
+        <sys_id>0b96b72b932e3210f20b35befaba10d6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package display_value="Library" source="x_662888_library">3d26a369936ef250f20b35befaba10e2</sys_package>
         <sys_policy/>
         <sys_scope display_value="Library">3d26a369936ef250f20b35befaba10e2</sys_scope>
-        <sys_update_name>sp_instance_6d67a1ca932eb650f20b35befaba101d</sys_update_name>
+        <sys_update_name>sp_instance_0b96b72b932e3210f20b35befaba10d6</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-01-26 14:34:55</sys_updated_on>
+        <sys_updated_on>2026-01-26 14:34:19</sys_updated_on>
         <title/>
         <url/>
-        <widget_parameters><![CDATA[{
-	"table": {
-		"value": "x_662888_library_book",
-		"displayValue": "x_662888_library_book"
-	},
-	"query": {
-		"value": "",
-		"displayValue": ""
-	},
-	"limit": {
-		"value": 60,
-		"displayValue": "60"
-	},
-	"order_by": {
-		"value": "title",
-		"displayValue": "title"
-	},
-	"order_desc": {
-		"value": "true",
-		"displayValue": "true"
-	},
-	"title_field": {
-		"value": "",
-		"displayValue": ""
-	},
-	"subtitle_field": {
-		"value": "",
-		"displayValue": ""
-	},
-	"image_field": {
-		"value": "",
-		"displayValue": ""
-	},
-	"link_page": {
-		"value": "library_book",
-		"displayValue": "library_book"
-	},
-	"link_sys_id_param": {
-		"value": "",
-		"displayValue": ""
-	},
-	"empty_text": {
-		"value": "",
-		"displayValue": ""
-	}
-}]]></widget_parameters>
+        <widget_parameters/>
     </sp_instance>
-    <sys_translated_text action="delete_multiple" query="documentkey=6d67a1ca932eb650f20b35befaba101d"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=0b96b72b932e3210f20b35befaba10d6"/>
 </record_update>

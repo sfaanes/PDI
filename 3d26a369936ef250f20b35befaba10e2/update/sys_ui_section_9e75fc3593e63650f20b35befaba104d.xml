@@ -4,13 +4,13 @@
             <element>original_title</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-01-21 08:10:12</sys_created_on>
-            <sys_id>c4ce608a9366b650f20b35befaba104a</sys_id>
+            <sys_created_on>2026-01-26 14:11:43</sys_created_on>
+            <sys_id>8071bb6f93ea3210f20b35befaba10b6</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Info" display_value="Info" name="x_662888_library_book" sys_domain="global" view="Default view">9e75fc3593e63650f20b35befaba104d</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-01-21 08:10:12</sys_updated_on>
+            <sys_updated_on>2026-01-26 14:11:43</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,69 +18,83 @@
             <element>work_key</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-01-21 08:10:12</sys_created_on>
-            <sys_id>8cce608a9366b650f20b35befaba104b</sys_id>
+            <sys_created_on>2026-01-26 14:11:43</sys_created_on>
+            <sys_id>c871bb6f93ea3210f20b35befaba10b7</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Info" display_value="Info" name="x_662888_library_book" sys_domain="global" view="Default view">9e75fc3593e63650f20b35befaba104d</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-01-21 08:10:12</sys_updated_on>
+            <sys_updated_on>2026-01-26 14:11:43</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>first_published_year</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-01-26 14:11:43</sys_created_on>
+            <sys_id>4871bb6f93ea3210f20b35befaba10b8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Info" display_value="Info" name="x_662888_library_book" sys_domain="global" view="Default view">9e75fc3593e63650f20b35befaba104d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-01-26 14:11:43</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
-            <position>2</position>
+            <position>3</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-01-21 08:10:12</sys_created_on>
-            <sys_id>0cce608a9366b650f20b35befaba104c</sys_id>
+            <sys_created_on>2026-01-26 14:11:43</sys_created_on>
+            <sys_id>c471bb6f93ea3210f20b35befaba10b9</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Info" display_value="Info" name="x_662888_library_book" sys_domain="global" view="Default view">9e75fc3593e63650f20b35befaba104d</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-01-21 08:10:12</sys_updated_on>
+            <sys_updated_on>2026-01-26 14:11:43</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>primary_language</element>
-            <position>3</position>
+            <position>4</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-01-21 08:10:12</sys_created_on>
-            <sys_id>88ce608a9366b650f20b35befaba104d</sys_id>
+            <sys_created_on>2026-01-26 14:11:43</sys_created_on>
+            <sys_id>4471bb6f93ea3210f20b35befaba10ba</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Info" display_value="Info" name="x_662888_library_book" sys_domain="global" view="Default view">9e75fc3593e63650f20b35befaba104d</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-01-21 08:10:12</sys_updated_on>
+            <sys_updated_on>2026-01-26 14:11:43</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>status</element>
-            <position>4</position>
+            <position>5</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-01-21 08:10:12</sys_created_on>
-            <sys_id>08ce608a9366b650f20b35befaba104e</sys_id>
+            <sys_created_on>2026-01-26 14:11:43</sys_created_on>
+            <sys_id>c071bb6f93ea3210f20b35befaba10bb</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Info" display_value="Info" name="x_662888_library_book" sys_domain="global" view="Default view">9e75fc3593e63650f20b35befaba104d</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-01-21 08:10:12</sys_updated_on>
+            <sys_updated_on>2026-01-26 14:11:43</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>duplicate_of</element>
-            <position>5</position>
+            <position>6</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-01-21 08:10:12</sys_created_on>
-            <sys_id>84ce608a9366b650f20b35befaba104f</sys_id>
+            <sys_created_on>2026-01-26 14:11:43</sys_created_on>
+            <sys_id>4071bb6f93ea3210f20b35befaba10bc</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Info" display_value="Info" name="x_662888_library_book" sys_domain="global" view="Default view">9e75fc3593e63650f20b35befaba104d</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-01-21 08:10:12</sys_updated_on>
+            <sys_updated_on>2026-01-26 14:11:43</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
