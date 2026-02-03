@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="90783c9653b27210a1c950b0a0490e0f" sys_domain="global" table="x_1518325_space_0_assets_systems" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-02-03 13:46:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d4783c9653b27210a1c950b0a0490e14</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_1518325_space_0_assets_systems" name="x_1518325_space_0_assets_systems" sys_domain="global" view="Default view">90783c9653b27210a1c950b0a0490e0f</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_1518325_space_0_assets_systems" sys_domain="global" view="Default view">c4ad10de53be3210a1c950b0a0490e2a</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-02-03 13:46:44</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-02-03 13:46:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>dc783c9653b27210a1c950b0a0490e15</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_1518325_space_0_assets_systems" name="x_1518325_space_0_assets_systems" sys_domain="global" view="Default view">90783c9653b27210a1c950b0a0490e0f</sys_ui_form>
+            <sys_ui_section caption="Technical Specs" display_value="Technical Specs" name="x_1518325_space_0_assets_systems" sys_domain="global" view="Default view">d0783c9653b27210a1c950b0a0490e0c</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-02-03 13:46:44</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-02-03 13:46:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1c783c9653b27210a1c950b0a0490e1c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_1518325_space_0_assets_systems" name="x_1518325_space_0_assets_systems" sys_domain="global" view="Default view">90783c9653b27210a1c950b0a0490e0f</sys_ui_form>
+            <sys_ui_section caption="Description" display_value="Description" name="x_1518325_space_0_assets_systems" sys_domain="global" view="Default view">5c783c9653b27210a1c950b0a0490e0d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-02-03 13:46:44</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_1518325_space_0_assets_systems</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-02-03 13:46:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>90783c9653b27210a1c950b0a0490e0f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_1518325_space_0_assets_systems</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Space Tracker" source="x_1518325_space_0">b5abf38a53ba3210a1c950b0a0490ef5</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Space Tracker">b5abf38a53ba3210a1c950b0a0490ef5</sys_scope>
+            <sys_update_name>sys_ui_form_sections_90783c9653b27210a1c950b0a0490e0f</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-02-03 13:46:44</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

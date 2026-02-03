@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="9b66749253b27210a1c950b0a0490e84" label="programs" max_length="40" name="x_1518325_space_0_programs" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Focus Tags" max_length="40" name="focus_tags" reference="x_1518325_space_0_focus_tags" type="glide_list"/>
+        <element attributes="encode_utf8=false" label="Destination" max_length="32" name="destination" reference="x_1518325_space_0_space_location" type="reference"/>
+        <element label="Success Probability" max_length="40" name="success_probability" type="integer"/>
+        <element attributes="encode_utf8=false" label="Operator" max_length="32" name="operator" reference="core_company" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Parent" max_length="32" name="parent" reference="x_1518325_space_0_programs" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Objective" max_length="32" name="objective" reference="x_1518325_space_0_space_objective" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Category" max_length="40" name="category" type="choice">
+            <choice/>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="3" label="Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Cancelled" sequence="6" value="cancelled"/>
+                <element inactive_on_update="false" label="Partial Failure" sequence="4" value="partial_failure"/>
+                <element inactive_on_update="false" label="In Progress" sequence="2" value="in_progress"/>
+                <element inactive_on_update="false" label="Scheduled" sequence="1" value="scheduled"/>
+                <element inactive_on_update="false" label="Proposed" sequence="0" value="proposed"/>
+                <element inactive_on_update="false" label="Success" sequence="3" value="success"/>
+                <element inactive_on_update="false" label="Failure" sequence="5" value="failure"/>
+            </choice>
+        </element>
+        <element attributes="encode_utf8=false" label="Primary Asset" max_length="32" name="primary_asset" reference="x_1518325_space_0_assets_systems" type="reference"/>
+        <element attributes="no_sort=true,slushbucket_ref_no_expand=true" label="Assets" max_length="1024" name="assets" reference="x_1518325_space_0_assets_systems" type="glide_list"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" display="true" label="Name" max_length="40" name="name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Launch Window" max_length="40" name="launch_window" type="glide_date"/>
+        <index name="index">
+            <element name="destination"/>
+        </index>
+        <index name="index2">
+            <element name="operator"/>
+        </index>
+        <index name="index3">
+            <element name="primary_asset"/>
+        </index>
+    </element>
+</database>

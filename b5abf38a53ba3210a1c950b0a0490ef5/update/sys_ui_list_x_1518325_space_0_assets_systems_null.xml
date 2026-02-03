@@ -2,78 +2,78 @@
     <sys_ui_list parent="" relationship="" sys_domain="global" table="x_1518325_space_0_assets_systems" version="2" view="">
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>sys_created_on</element>
-            <list_id display_value="x_1518325_space_0_assets_systems" element="NULL" name="x_1518325_space_0_assets_systems" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">c4ad10de53be3210a1c950b0a0490eae</list_id>
+            <element>name</element>
+            <list_id display_value="x_1518325_space_0_assets_systems" element="NULL" name="x_1518325_space_0_assets_systems" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">cad878d653b27210a1c950b0a0490eff</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-02-03 11:49:35</sys_created_on>
-            <sys_id>84ad10de53be3210a1c950b0a0490eaf</sys_id>
+            <sys_created_on>2026-02-03 13:48:30</sys_created_on>
+            <sys_id>8ad8b8d653b27210a1c950b0a0490e00</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-02-03 11:49:35</sys_updated_on>
+            <sys_updated_on>2026-02-03 13:48:30</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>sys_created_by</element>
-            <list_id display_value="x_1518325_space_0_assets_systems" element="NULL" name="x_1518325_space_0_assets_systems" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">c4ad10de53be3210a1c950b0a0490eae</list_id>
+            <element>location_orbit</element>
+            <list_id display_value="x_1518325_space_0_assets_systems" element="NULL" name="x_1518325_space_0_assets_systems" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">cad878d653b27210a1c950b0a0490eff</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>1</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-02-03 11:49:35</sys_created_on>
-            <sys_id>0cad10de53be3210a1c950b0a0490eaf</sys_id>
+            <sys_created_on>2026-02-03 13:48:30</sys_created_on>
+            <sys_id>02d8b8d653b27210a1c950b0a0490e01</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-02-03 11:49:35</sys_updated_on>
+            <sys_updated_on>2026-02-03 13:48:30</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>sys_updated_on</element>
-            <list_id display_value="x_1518325_space_0_assets_systems" element="NULL" name="x_1518325_space_0_assets_systems" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">c4ad10de53be3210a1c950b0a0490eae</list_id>
+            <element>owner_manufacturer</element>
+            <list_id display_value="x_1518325_space_0_assets_systems" element="NULL" name="x_1518325_space_0_assets_systems" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">cad878d653b27210a1c950b0a0490eff</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>2</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-02-03 11:49:35</sys_created_on>
-            <sys_id>80ad10de53be3210a1c950b0a0490eb0</sys_id>
+            <sys_created_on>2026-02-03 13:48:30</sys_created_on>
+            <sys_id>86d8b8d653b27210a1c950b0a0490e01</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-02-03 11:49:35</sys_updated_on>
+            <sys_updated_on>2026-02-03 13:48:30</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>sys_updated_by</element>
-            <list_id display_value="x_1518325_space_0_assets_systems" element="NULL" name="x_1518325_space_0_assets_systems" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">c4ad10de53be3210a1c950b0a0490eae</list_id>
+            <element>asset_type</element>
+            <list_id display_value="x_1518325_space_0_assets_systems" element="NULL" name="x_1518325_space_0_assets_systems" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">cad878d653b27210a1c950b0a0490eff</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>3</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-02-03 11:49:35</sys_created_on>
-            <sys_id>08ad10de53be3210a1c950b0a0490eb0</sys_id>
+            <sys_created_on>2026-02-03 13:48:30</sys_created_on>
+            <sys_id>0ed8b8d653b27210a1c950b0a0490e01</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-02-03 11:49:35</sys_updated_on>
+            <sys_updated_on>2026-02-03 13:48:30</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>sys_mod_count</element>
-            <list_id display_value="x_1518325_space_0_assets_systems" element="NULL" name="x_1518325_space_0_assets_systems" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">c4ad10de53be3210a1c950b0a0490eae</list_id>
+            <element>sys_updated_on</element>
+            <list_id display_value="x_1518325_space_0_assets_systems" element="NULL" name="x_1518325_space_0_assets_systems" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">cad878d653b27210a1c950b0a0490eff</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>4</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-02-03 11:49:35</sys_created_on>
-            <sys_id>8cad10de53be3210a1c950b0a0490eb0</sys_id>
+            <sys_created_on>2026-02-03 13:48:30</sys_created_on>
+            <sys_id>82d8b8d653b27210a1c950b0a0490e02</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-02-03 11:49:35</sys_updated_on>
+            <sys_updated_on>2026-02-03 13:48:30</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
@@ -87,10 +87,10 @@
             <sum>false</sum>
             <sys_class_name>sys_ui_list</sys_class_name>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-02-03 11:49:35</sys_created_on>
+            <sys_created_on>2026-02-03 13:48:30</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>c4ad10de53be3210a1c950b0a0490eae</sys_id>
+            <sys_id>cad878d653b27210a1c950b0a0490eff</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>x_1518325_space_0_assets_systems</sys_name>
             <sys_package display_value="Space Tracker" source="x_1518325_space_0">b5abf38a53ba3210a1c950b0a0490ef5</sys_package>
@@ -98,7 +98,7 @@
             <sys_scope display_value="Space Tracker">b5abf38a53ba3210a1c950b0a0490ef5</sys_scope>
             <sys_update_name>sys_ui_list_x_1518325_space_0_assets_systems_null</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-02-03 11:49:35</sys_updated_on>
+            <sys_updated_on>2026-02-03 13:48:30</sys_updated_on>
             <sys_user/>
             <view display_value="Default view" name="NULL">Default view</view>
             <view_name/>

@@ -24,7 +24,7 @@
         <element display="true" label="Name" max_length="100" name="name" type="string"/>
         <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
         <element label="Capacity" max_length="40" name="capacity" type="string"/>
-        <element label="Location/Orbit" max_length="32" name="location_orbit" reference="x_1518325_space_0_focus_tags" type="reference"/>
+        <element label="Mission Destination/Orbit" max_length="32" name="location_orbit" reference="x_1518325_space_0_space_location" type="reference"/>
         <element label="Specifications" max_length="40" name="specifications" type="simple_name_values"/>
         <element choice="1" label="Asset Type" max_length="40" name="asset_type" type="choice">
             <choice>

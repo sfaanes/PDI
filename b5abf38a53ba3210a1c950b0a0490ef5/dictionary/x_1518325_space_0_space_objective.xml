@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="16f6b8d253b27210a1c950b0a0490e2b" label="Space Objective" max_length="40" name="x_1518325_space_0_space_objective" type="collection">
+        <element label="Description" max_length="1000" name="description" type="string"/>
+        <element label="Objective" max_length="100" name="objective" type="string"/>
+    </element>
+</database>
