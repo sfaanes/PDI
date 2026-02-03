@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="bea0685653fe3210a1c950b0a0490eca" sys_domain="global" table="x_1518325_space_0_technology" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-02-03 12:02:52</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>36a0685653fe3210a1c950b0a0490edd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_1518325_space_0_technology" name="x_1518325_space_0_technology" sys_domain="global" view="Default view">bea0685653fe3210a1c950b0a0490eca</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_1518325_space_0_technology" sys_domain="global" view="Default view">5e050c9e53fa3210a1c950b0a0490e0f</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-02-03 12:02:52</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-02-03 12:02:52</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7aa0685653fe3210a1c950b0a0490ede</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_1518325_space_0_technology" name="x_1518325_space_0_technology" sys_domain="global" view="Default view">bea0685653fe3210a1c950b0a0490eca</sys_ui_form>
+            <sys_ui_section caption="New Section" display_value="New Section" name="x_1518325_space_0_technology" sys_domain="global" view="Default view">7ea0685653fe3210a1c950b0a0490ec8</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-02-03 12:02:52</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_1518325_space_0_technology</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-02-03 12:02:52</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>bea0685653fe3210a1c950b0a0490eca</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_1518325_space_0_technology</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Space Tracker" source="x_1518325_space_0">b5abf38a53ba3210a1c950b0a0490ef5</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Space Tracker">b5abf38a53ba3210a1c950b0a0490ef5</sys_scope>
+            <sys_update_name>sys_ui_form_sections_bea0685653fe3210a1c950b0a0490eca</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-02-03 12:02:52</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

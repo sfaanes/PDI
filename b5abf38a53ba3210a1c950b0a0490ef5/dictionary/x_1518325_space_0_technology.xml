@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="a105c89e53fa3210a1c950b0a0490e11" label="Technology" max_length="40" name="x_1518325_space_0_technology" type="collection">
+        <element label="Key Players" max_length="1024" name="key_players" reference="core_company" type="glide_list"/>
+        <element label="Bottlenecks" max_length="1000" name="bottlenecks" type="string"/>
+        <element choice="1" label="Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Operational" sequence="2" value="operational"/>
+                <element inactive_on_update="false" label="Concept" sequence="0" value="concept"/>
+                <element inactive_on_update="false" label="Prototype" sequence="1" value="prototype"/>
+                <element inactive_on_update="false" label="Active" sequence="0" value="Active"/>
+            </choice>
+        </element>
+        <element attributes="is_multi_text=true,preview_first=true,preview_selector=true" label="New Wiki" max_length="65536" name="u_wiki_text_1" type="wiki_text"/>
+        <element label="Performance Metrics" max_length="40" name="performance_metrics" type="simple_name_values"/>
+        <element label="Technology Description" max_length="65536" name="tech_description_html" type="html"/>
+        <element choice="1" label="Domain" max_length="40" name="domain" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Robotics" sequence="3" value="robotics"/>
+                <element inactive_on_update="false" label="Power &amp; Energy" sequence="1" value="power_energy"/>
+                <element inactive_on_update="false" label="Communications" sequence="7" value="communications"/>
+                <element inactive_on_update="false" label="Propulsion" sequence="0" value="propulsion"/>
+                <element inactive_on_update="false" label="Materials &amp; Manufacturing" sequence="5" value="materials_manufacturing"/>
+                <element inactive_on_update="false" label="EDL" sequence="6" value="edl"/>
+                <element inactive_on_update="false" label="AI" sequence="4" value="ai"/>
+                <element inactive_on_update="false" label="Life Support" sequence="2" value="life_support"/>
+            </choice>
+        </element>
+        <element label="New HTML" max_length="65536" name="u_html_2" type="html"/>
+        <element display="true" label="Name" max_length="40" name="name" type="string"/>
+        <element label="What Works" max_length="1000" name="what_works" type="string"/>
+        <element label="Focus Tags" max_length="1024" name="focus_tags" reference="x_1518325_space_0_focus_tags" type="glide_list"/>
+        <element choice="1" label="TRL" max_length="40" name="trl" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="6" sequence="2" value="6"/>
+                <element inactive="true" inactive_on_update="true" label="Space Flight Ready" sequence="0" value="space_flight_ready"/>
+                <element inactive_on_update="false" label="Relevant Environment Validation" sequence="8" value="relevant_environment_validation"/>
+                <element inactive_on_update="false" label="Proof of Concept" sequence="6" value="proof_of_concept"/>
+                <element inactive_on_update="false" label="Basic Principles" sequence="4" value="basic_principles"/>
+                <element inactive_on_update="false" label="Flight Proven" sequence="12" value="flight_proven"/>
+                <element inactive_on_update="false" label="7" sequence="3" value="7"/>
+                <element inactive_on_update="false" label="3" sequence="0" value="3"/>
+                <element inactive_on_update="false" label="4" sequence="1" value="4"/>
+                <element inactive_on_update="false" label="Space Flight Reafy" sequence="10" value="space_flight_reafy"/>
+                <element inactive_on_update="false" label="Flight Qualified" sequence="11" value="flight_qualified"/>
+                <element inactive_on_update="false" label="Prototype Demonstration" sequence="9" value="prototype_demonstration"/>
+                <element inactive_on_update="false" label="Component Lab Validation" sequence="7" value="component_lab_validation"/>
+                <element inactive_on_update="false" label="Concept Formulation" sequence="5" value="concept_formulation"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+    </element>
+</database>

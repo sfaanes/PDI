@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="0e4c501e53be3210a1c950b0a0490eb7" extends="sys_import_set_row" label="Technology Import" max_length="40" name="x_1518325_space_0_technology_import" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=u_status" label="Status" max_length="40" name="u_status" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=u_what_works" label="What works" max_length="40" name="u_what_works" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=u_key_players" label="Key players" max_length="40" name="u_key_players" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=u_bottlenecks" label="Bottlenecks" max_length="40" name="u_bottlenecks" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=u_performance_metrics" label="Performance metrics" max_length="40" name="u_performance_metrics" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=ï»¿name" label="ï»¿name" max_length="40" name="u_rplcd_n_ascii_298282939" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=u_trl" label="Trl" max_length="40" name="u_trl" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=u_domain" label="Domain" max_length="40" name="u_domain" type="string"/>
+    </element>
+</database>

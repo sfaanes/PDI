@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="x_1518325_space_0_primary_sector" table="core_company" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>x_1518325_space_0_primary_sector</element>
+            <name>core_company</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-02-03 09:55:23</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_1518325_space_0_primary_sector</sys_name>
+            <sys_package display_value="Space Tracker" source="x_1518325_space_0">b5abf38a53ba3210a1c950b0a0490ef5</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Space Tracker">b5abf38a53ba3210a1c950b0a0490ef5</sys_scope>
+            <sys_update_name>sys_choice_core_company_x_1518325_space_0_primary_sector</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-02-03 09:55:23</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_1518325_space_0_primary_sector</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Defense and Space Systems</label>
+            <language>en</language>
+            <name>core_company</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-02-03 09:55:23</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-02-03 09:55:23</sys_updated_on>
+            <value>Defense and Space Systems</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_1518325_space_0_primary_sector</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Exploration and Science</label>
+            <language>en</language>
+            <name>core_company</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-02-03 09:55:24</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-02-03 09:55:24</sys_updated_on>
+            <value>Exploration and Science</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_1518325_space_0_primary_sector</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Government Agency</label>
+            <language>en</language>
+            <name>core_company</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-02-03 09:55:24</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-02-03 09:55:24</sys_updated_on>
+            <value>Government Agency</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_1518325_space_0_primary_sector</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Infrastructure and Logistics</label>
+            <language>en</language>
+            <name>core_company</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-02-03 09:55:24</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-02-03 09:55:24</sys_updated_on>
+            <value>Infrastructure and Logistics</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_1518325_space_0_primary_sector</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Launch Services</label>
+            <language>en</language>
+            <name>core_company</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-02-03 09:55:24</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-02-03 09:55:24</sys_updated_on>
+            <value>Launch Services</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_1518325_space_0_primary_sector</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Manufacturing and Components</label>
+            <language>en</language>
+            <name>core_company</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-02-03 09:55:24</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-02-03 09:55:24</sys_updated_on>
+            <value>Manufacturing and Components</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_1518325_space_0_primary_sector</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Satellite Constellations</label>
+            <language>en</language>
+            <name>core_company</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-02-03 09:55:24</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-02-03 09:55:24</sys_updated_on>
+            <value>Satellite Constellations</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_1518325_space_0_primary_sector</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Space Tourism</label>
+            <language>en</language>
+            <name>core_company</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-02-03 09:55:23</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-02-03 09:55:23</sys_updated_on>
+            <value>Space Tourism</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

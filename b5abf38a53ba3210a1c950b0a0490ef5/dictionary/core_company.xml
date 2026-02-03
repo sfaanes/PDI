@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="all_tables.text_index_translations=true,global_search_config_handler=CompanySearchConfig,kagami_csindex_enabled=true,slushbucket_omit_embedded=true" create_roles="user_admin" db_object_id="4a31c822482132108bb2a3a8cef79703" label="Company" max_length="40" name="core_company" text_index="true" type="collection">
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Primary Sector" max_length="40" name="x_1518325_space_0_primary_sector" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Exploration and Science" sequence="0" value="Exploration and Science"/>
+                <element inactive_on_update="false" label="Launch Services" sequence="0" value="Launch Services"/>
+                <element inactive_on_update="false" label="Defense and Space Systems" sequence="0" value="Defense and Space Systems"/>
+                <element inactive_on_update="false" label="Government Agency" sequence="0" value="Government Agency"/>
+                <element inactive_on_update="false" label="Space Tourism" sequence="0" value="Space Tourism"/>
+                <element inactive_on_update="false" label="Satellite Constellations" sequence="0" value="Satellite Constellations"/>
+                <element inactive_on_update="false" label="Infrastructure and Logistics" sequence="0" value="Infrastructure and Logistics"/>
+                <element inactive_on_update="false" label="Manufacturing and Components" sequence="0" value="Manufacturing and Components"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Moat Value" max_length="4000" name="x_1518325_space_0_moat_value" type="string"/>
+        <element attributes="array=denormalized,no_sort=true,slushbucket_ref_no_expand=true" label="Focus Tags" max_length="1024" name="x_1518325_space_0_focus_tags" reference="x_1518325_space_0_focus_tags" type="glide_list"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Status" max_length="40" name="x_1518325_space_0_status" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Active" sequence="0" value="Active"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Priority" max_length="40" name="x_1518325_space_0_priority" type="string">
+            <choice>
+                <element inactive_on_update="false" label="P2" sequence="0" value="P2"/>
+                <element inactive_on_update="false" label="P3" sequence="0" value="P3"/>
+                <element inactive_on_update="false" label="P1" sequence="0" value="P1"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Confidence" max_length="40" name="x_1518325_space_0_confidence" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Medium" sequence="0" value="Medium"/>
+                <element inactive_on_update="false" label="High" sequence="0" value="High"/>
+                <element inactive_on_update="false" label="Low" sequence="0" value="Low"/>
+            </choice>
+        </element>
+    </element>
+</database>

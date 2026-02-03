@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="3f9ddc9e53be3210a1c950b0a0490eee" label="Assets &amp; Systems" max_length="40" name="x_1518325_space_0_assets_systems" type="collection">
+        <element label="Focus Tags" max_length="1024" name="focus_tags" reference="x_1518325_space_0_focus_tags" type="glide_list"/>
+        <element label="Description" max_length="1000" name="description" type="string"/>
+        <element choice="3" label="Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Development" sequence="1" value="development"/>
+                <element inactive_on_update="false" label="Concept" sequence="0" value="concept"/>
+                <element inactive_on_update="false" label="Retired" sequence="3" value="retired"/>
+                <element inactive_on_update="false" label="Lost/Destroyed" sequence="4" value="lost_destroyed"/>
+                <element inactive_on_update="false" label="Active/Operational" sequence="2" value="active_operational"/>
+            </choice>
+        </element>
+        <element choice="1" label="Autonomy Level" max_length="40" name="autonomy_level" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Conditional" sequence="3" value="conditional"/>
+                <element inactive_on_update="false" label="Assisted" sequence="1" value="assisted"/>
+                <element inactive_on_update="false" label="Full AI" sequence="5" value="full_ai"/>
+                <element inactive_on_update="false" label="Manual" sequence="0" value="manual"/>
+                <element inactive_on_update="false" label="High Autonomy" sequence="4" value="high_autonomy"/>
+                <element inactive_on_update="false" label="Partial Autonomy" sequence="2" value="partial_autonomy"/>
+            </choice>
+        </element>
+        <element display="true" label="Name" max_length="100" name="name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Capacity" max_length="40" name="capacity" type="string"/>
+        <element label="Location/Orbit" max_length="32" name="location_orbit" reference="x_1518325_space_0_focus_tags" type="reference"/>
+        <element label="Specifications" max_length="40" name="specifications" type="simple_name_values"/>
+        <element choice="1" label="Asset Type" max_length="40" name="asset_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Lander" sequence="1" value="lander"/>
+                <element inactive_on_update="false" label="Robot" sequence="7" value="robot"/>
+                <element inactive_on_update="false" label="Satellite" sequence="5" value="satellite"/>
+                <element inactive_on_update="false" label="Habitat" sequence="3" value="habitat"/>
+                <element inactive_on_update="false" label="Launch Vehicle" sequence="0" value="launch_vehicle"/>
+                <element inactive_on_update="false" label="Station" sequence="4" value="station"/>
+                <element inactive_on_update="false" label="Rover" sequence="2" value="rover"/>
+                <element inactive_on_update="false" label="Infrastructure" sequence="6" value="infrastructure"/>
+            </choice>
+        </element>
+        <element label="Owner/Manufacturer" max_length="32" name="owner_manufacturer" reference="core_company" type="reference"/>
+        <index name="index">
+            <element name="location_orbit"/>
+        </index>
+        <index name="index2">
+            <element name="owner_manufacturer"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="050dbb4e53ba3210a1c950b0a0490edf" label="Focus Tags" max_length="40" name="x_1518325_space_0_focus_tags" type="collection">
+        <element choice="1" label="Type" max_length="40" name="type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Robotics" sequence="0" value="Robotics"/>
+                <element inactive_on_update="false" label="Habitat" sequence="0" value="Habitat"/>
+                <element inactive_on_update="false" label="Business" sequence="0" value="Business"/>
+                <element inactive_on_update="false" label="Technology" sequence="0" value="technology"/>
+                <element inactive_on_update="false" label="Capability" sequence="0" value="Capability"/>
+                <element inactive_on_update="false" label="Resource" sequence="0" value="Resource"/>
+                <element inactive_on_update="false" label="Destination" sequence="1" value="destination"/>
+            </choice>
+        </element>
+        <element display="true" label="Name" max_length="40" name="name" type="string"/>
+    </element>
+</database>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="71f4006e482532108bb2a3a8cef79770" extends="sys_import_set_row" label="Computer" max_length="40" name="imp_computer" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=x_1518325_space_0_focus_tags" label="x_1518325_space_0_focus_tags" max_length="40" name="u_x_1518325_space_0_focus_tags" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=u_type" label="Type" max_length="40" name="u_type" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=x_1518325_space_0_priority" label="x_1518325_space_0_priority" max_length="40" name="u_x_1518325_space_0_priority" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=x_1518325_space_0_primary_sector" label="x_1518325_space_0_primary_sector" max_length="40" name="u_x_1518325_sp_primary_sector" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=x_1518325_space_0_status" label="x_1518325_space_0_status" max_length="40" name="u_x_1518325_space_0_status" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=x_1518325_space_0_confidence" label="x_1518325_space_0_confidence" max_length="40" name="u_x_1518325_space_0_confidence" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=website" label="website" max_length="40" name="u_website" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=x_1518325_space_0_moat_value" label="x_1518325_space_0_moat_value" max_length="40" name="u_x_1518325_space_0_moat_value" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=ï»¿name" label="ï»¿name" max_length="40" name="u_rplcd_n_ascii_298282939" type="string"/>
+    </element>
+</database>

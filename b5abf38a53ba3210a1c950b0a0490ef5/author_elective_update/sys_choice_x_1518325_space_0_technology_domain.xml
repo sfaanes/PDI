@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="domain" table="x_1518325_space_0_technology" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>domain</element>
+            <name>x_1518325_space_0_technology</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-02-03 10:08:18</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>domain</sys_name>
+            <sys_package display_value="Space Tracker" source="x_1518325_space_0">b5abf38a53ba3210a1c950b0a0490ef5</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Space Tracker">b5abf38a53ba3210a1c950b0a0490ef5</sys_scope>
+            <sys_update_name>sys_choice_x_1518325_space_0_technology_domain</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-02-03 10:08:18</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>domain</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Propulsion</label>
+            <language>en</language>
+            <name>x_1518325_space_0_technology</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-02-03 10:08:18</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-02-03 10:08:18</sys_updated_on>
+            <value>propulsion</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>domain</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Power &amp; Energy</label>
+            <language>en</language>
+            <name>x_1518325_space_0_technology</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-02-03 10:08:18</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-02-03 10:08:18</sys_updated_on>
+            <value>power_energy</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>domain</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Life Support</label>
+            <language>en</language>
+            <name>x_1518325_space_0_technology</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-02-03 10:08:18</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-02-03 10:08:18</sys_updated_on>
+            <value>life_support</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>domain</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Robotics</label>
+            <language>en</language>
+            <name>x_1518325_space_0_technology</name>
+            <sequence>3</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-02-03 10:08:18</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-02-03 10:08:18</sys_updated_on>
+            <value>robotics</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>domain</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>AI</label>
+            <language>en</language>
+            <name>x_1518325_space_0_technology</name>
+            <sequence>4</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-02-03 10:08:18</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-02-03 10:08:18</sys_updated_on>
+            <value>ai</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>domain</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Materials &amp; Manufacturing</label>
+            <language>en</language>
+            <name>x_1518325_space_0_technology</name>
+            <sequence>5</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-02-03 10:08:18</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-02-03 10:08:18</sys_updated_on>
+            <value>materials_manufacturing</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>domain</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>EDL</label>
+            <language>en</language>
+            <name>x_1518325_space_0_technology</name>
+            <sequence>6</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-02-03 10:08:18</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-02-03 10:08:18</sys_updated_on>
+            <value>edl</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>domain</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Communications</label>
+            <language>en</language>
+            <name>x_1518325_space_0_technology</name>
+            <sequence>7</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-02-03 10:08:18</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-02-03 10:08:18</sys_updated_on>
+            <value>communications</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

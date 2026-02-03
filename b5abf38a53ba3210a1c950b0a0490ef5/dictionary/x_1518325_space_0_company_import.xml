@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="85f0cc5653fa3210a1c950b0a0490e31" extends="sys_import_set_row" label="company import" max_length="40" name="x_1518325_space_0_company_import" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=x_1518325_space_0_moat_value" label="x_1518325_space_0_moat_value" max_length="40" name="u_x_1518325_space_0_moat_value" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=x_1518325_space_0_priority" label="x_1518325_space_0_priority" max_length="40" name="u_x_1518325_space_0_priority" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=x_1518325_space_0_primary_sector" label="x_1518325_space_0_primary_sector" max_length="40" name="u_x_1518325_sp_primary_sector" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=u_performance_metrics" label="Performance metrics" max_length="40" name="u_performance_metrics" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=u_domain" label="Domain" max_length="40" name="u_domain" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=u_key_players" label="Key players" max_length="40" name="u_key_players" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=u_status" label="Status" max_length="40" name="u_status" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=x_1518325_space_0_confidence" label="x_1518325_space_0_confidence" max_length="40" name="u_x_1518325_space_0_confidence" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=ï»¿name" label="ï»¿name" max_length="40" name="u_rplcd_n_ascii_298282939" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=u_what_works" label="What works" max_length="40" name="u_what_works" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=x_1518325_space_0_status" label="x_1518325_space_0_status" max_length="40" name="u_x_1518325_space_0_status" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=u_trl" label="Trl" max_length="40" name="u_trl" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=x_1518325_space_0_focus_tags" label="x_1518325_space_0_focus_tags" max_length="40" name="u_x_1518325_space_0_focus_tags" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=u_bottlenecks" label="Bottlenecks" max_length="40" name="u_bottlenecks" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=website" label="website" max_length="40" name="u_website" type="string"/>
+    </element>
+</database>
