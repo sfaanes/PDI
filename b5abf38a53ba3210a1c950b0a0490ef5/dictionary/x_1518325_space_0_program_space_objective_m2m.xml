@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="d3ea3cae53b23210a1c950b0a0490e4a" label="program_space_objective_m2m_Programs_Space Objectives" max_length="40" name="x_1518325_space_0_program_space_objective_m2m" type="collection">
+        <element attributes="encode_utf8=false" label="Space Objectives" max_length="32" name="x_1518325_space_0_space_objective" reference="x_1518325_space_0_space_objective" type="reference"/>
+        <element attributes="encode_utf8=false" label="Programs" max_length="32" name="x_1518325_space_0_programs" reference="x_1518325_space_0_programs" type="reference"/>
+        <index name="index">
+            <element name="x_1518325_space_0_programs"/>
+        </index>
+    </element>
+</database>

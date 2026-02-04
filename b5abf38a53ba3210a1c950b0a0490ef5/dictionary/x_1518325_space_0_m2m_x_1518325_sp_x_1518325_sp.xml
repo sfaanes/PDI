@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="78b9f02e53b23210a1c950b0a0490e69" label="x_1518325_space_0_m2m_Programs_Assets &amp; Systems" max_length="40" name="x_1518325_space_0_m2m_x_1518325_sp_x_1518325_sp" type="collection">
+        <element attributes="encode_utf8=false" label="Assets &amp; Systems" max_length="32" name="x_1518325_space_0_assets_systems" reference="x_1518325_space_0_assets_systems" type="reference"/>
+        <element attributes="encode_utf8=false" label="Programs" max_length="32" name="x_1518325_space_0_programs" reference="x_1518325_space_0_programs" type="reference"/>
+        <index name="index">
+            <element name="x_1518325_space_0_programs"/>
+        </index>
+    </element>
+</database>

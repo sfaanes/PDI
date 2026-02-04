@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="8ed7306a53b23210a1c950b0a0490e10" label="Funding Source" max_length="40" name="x_1518325_space_0_funding_source" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Description" max_length="1000" name="description" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="commercial" display="true" label="Name" max_length="40" name="name" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Contract" value="contract"/>
+                <element inactive_on_update="false" label="Government" value="government"/>
+                <element inactive_on_update="false" label="Venture Capital" value="venture_capital"/>
+                <element inactive_on_update="false" label="Public-Private" value="public_private"/>
+                <element inactive_on_update="false" label="Commercial" value="commercial"/>
+            </choice>
+        </element>
+    </element>
+</database>

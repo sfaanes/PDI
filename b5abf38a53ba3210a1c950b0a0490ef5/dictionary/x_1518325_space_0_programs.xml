@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element db_object_id="9b66749253b27210a1c950b0a0490e84" label="programs" max_length="40" name="x_1518325_space_0_programs" type="collection">
+    <element db_object_id="9b66749253b27210a1c950b0a0490e84" label="Programs" max_length="40" name="x_1518325_space_0_programs" type="collection">
         <element attributes="edge_encryption_enabled=true" label="Focus Tags" max_length="40" name="focus_tags" reference="x_1518325_space_0_focus_tags" type="glide_list"/>
         <element attributes="encode_utf8=false" label="Destination" max_length="32" name="destination" reference="x_1518325_space_0_space_location" type="reference"/>
         <element label="Success Probability" max_length="40" name="success_probability" type="integer"/>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="bc7af4ae53b23210a1c950b0a0490e0e" label="Assets and Systems M2M" max_length="40" name="x_1518325_space_0_1518325_space_0_m2m_x_assets_systems_to_technology" type="collection">
+        <element attributes="encode_utf8=false" label="Assets &amp; Systems" max_length="32" name="x_1518325_space_0_assets_systems" reference="x_1518325_space_0_assets_systems" type="reference"/>
+        <element attributes="encode_utf8=false" label="Technologys" max_length="32" name="x_1518325_space_0_technology" reference="x_1518325_space_0_technology" type="reference"/>
+        <index name="index">
+            <element name="x_1518325_space_0_technology"/>
+        </index>
+    </element>
+</database>
