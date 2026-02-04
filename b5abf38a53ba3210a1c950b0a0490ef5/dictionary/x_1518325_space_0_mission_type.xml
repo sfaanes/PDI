@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="e96289ee53f23210a1c950b0a0490e26" label="Mission Type" max_length="40" name="x_1518325_space_0_mission_type" type="collection">
+        <element display="true" label="Type" max_length="40" name="type" type="string"/>
+        <element choice="3" label="Category" max_length="40" name="category" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Crew Involvement" sequence="0" value="crew_involvement"/>
+                <element inactive_on_update="false" label="Operational Phase" sequence="3" value="operational_phase"/>
+                <element inactive_on_update="false" label="Architecture" sequence="1" value="architecture"/>
+                <element inactive_on_update="false" label="Mission Profile" sequence="2" value="mission_profile"/>
+            </choice>
+        </element>
+        <element label="Description" max_length="1000" name="description" type="string"/>
+    </element>
+</database>

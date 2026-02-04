@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="5684c52653363210a1c950b0a0490ea0" label="program_m2m_Programs_Mission Types" max_length="40" name="x_1518325_space_0_program_m2m_mission_type" type="collection">
+        <element attributes="encode_utf8=false" label="Mission Types" max_length="32" name="x_1518325_space_0_mission_type" reference="x_1518325_space_0_mission_type" type="reference"/>
+        <element attributes="encode_utf8=false" label="Programs" max_length="32" name="x_1518325_space_0_programs" reference="x_1518325_space_0_programs" type="reference"/>
+        <index name="index">
+            <element name="x_1518325_space_0_mission_type"/>
+        </index>
+        <index name="index2">
+            <element name="x_1518325_space_0_programs"/>
+        </index>
+    </element>
+</database>

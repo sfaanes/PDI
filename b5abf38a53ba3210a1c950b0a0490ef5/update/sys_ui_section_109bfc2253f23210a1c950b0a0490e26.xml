@@ -4,13 +4,13 @@
             <element>.begin_split</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-02-04 08:45:53</sys_created_on>
-            <sys_id>4f2d742653f23210a1c950b0a0490e2f</sys_id>
+            <sys_created_on>2026-02-04 08:56:48</sys_created_on>
+            <sys_id>3aaf7c6a53f23210a1c950b0a0490e93</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1518325_space_0_hazard" sys_domain="global" view="Default view">109bfc2253f23210a1c950b0a0490e26</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-02-04 08:45:53</sys_updated_on>
+            <sys_updated_on>2026-02-04 08:56:48</sys_updated_on>
             <sys_user/>
             <type>.begin_split</type>
         </sys_ui_element>
@@ -18,13 +18,13 @@
             <element>name</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-02-04 08:45:53</sys_created_on>
-            <sys_id>0b2d742653f23210a1c950b0a0490e30</sys_id>
+            <sys_created_on>2026-02-04 08:56:48</sys_created_on>
+            <sys_id>f2af7c6a53f23210a1c950b0a0490e94</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1518325_space_0_hazard" sys_domain="global" view="Default view">109bfc2253f23210a1c950b0a0490e26</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-02-04 08:45:53</sys_updated_on>
+            <sys_updated_on>2026-02-04 08:56:48</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -32,43 +32,71 @@
             <element>.split</element>
             <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-02-04 08:45:53</sys_created_on>
-            <sys_id>c32d742653f23210a1c950b0a0490e31</sys_id>
+            <sys_created_on>2026-02-04 08:56:48</sys_created_on>
+            <sys_id>beaf7c6a53f23210a1c950b0a0490e94</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1518325_space_0_hazard" sys_domain="global" view="Default view">109bfc2253f23210a1c950b0a0490e26</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-02-04 08:45:53</sys_updated_on>
+            <sys_updated_on>2026-02-04 08:56:48</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>severity</element>
+            <element>category</element>
             <position>3</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-02-04 08:45:53</sys_created_on>
-            <sys_id>8f2d742653f23210a1c950b0a0490e31</sys_id>
+            <sys_created_on>2026-02-04 08:56:48</sys_created_on>
+            <sys_id>7aaf7c6a53f23210a1c950b0a0490e95</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1518325_space_0_hazard" sys_domain="global" view="Default view">109bfc2253f23210a1c950b0a0490e26</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-02-04 08:45:53</sys_updated_on>
+            <sys_updated_on>2026-02-04 08:56:48</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>severity</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-02-04 08:56:48</sys_created_on>
+            <sys_id>36af7c6a53f23210a1c950b0a0490e96</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1518325_space_0_hazard" sys_domain="global" view="Default view">109bfc2253f23210a1c950b0a0490e26</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-02-04 08:56:48</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.end_split</element>
-            <position>4</position>
+            <position>5</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-02-04 08:45:53</sys_created_on>
-            <sys_id>4b2d742653f23210a1c950b0a0490e32</sys_id>
+            <sys_created_on>2026-02-04 08:56:48</sys_created_on>
+            <sys_id>feaf7c6a53f23210a1c950b0a0490e96</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1518325_space_0_hazard" sys_domain="global" view="Default view">109bfc2253f23210a1c950b0a0490e26</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-02-04 08:45:53</sys_updated_on>
+            <sys_updated_on>2026-02-04 08:56:48</sys_updated_on>
             <sys_user/>
             <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>description</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-02-04 08:56:48</sys_created_on>
+            <sys_id>baaf7c6a53f23210a1c950b0a0490e97</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1518325_space_0_hazard" sys_domain="global" view="Default view">109bfc2253f23210a1c950b0a0490e26</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-02-04 08:56:48</sys_updated_on>
+            <sys_user/>
+            <type/>
         </sys_ui_element>
         <sys_ui_section action="INSERT_OR_UPDATE">
             <caption/>
