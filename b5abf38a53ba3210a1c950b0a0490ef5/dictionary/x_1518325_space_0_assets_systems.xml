@@ -28,14 +28,17 @@
         <element label="Specifications" max_length="40" name="specifications" type="simple_name_values"/>
         <element choice="1" label="Asset Type" max_length="40" name="asset_type" type="choice">
             <choice>
+                <element inactive_on_update="false" label="Spacecraft" sequence="7" value="Spacecraft"/>
                 <element inactive_on_update="false" label="Lander" sequence="1" value="lander"/>
-                <element inactive_on_update="false" label="Robot" sequence="7" value="robot"/>
-                <element inactive_on_update="false" label="Satellite" sequence="5" value="satellite"/>
+                <element inactive_on_update="false" label="Robot" sequence="6" value="robot"/>
+                <element inactive_on_update="false" label="Satellite" sequence="4" value="satellite"/>
                 <element inactive_on_update="false" label="Habitat" sequence="3" value="habitat"/>
                 <element inactive_on_update="false" label="Launch Vehicle" sequence="0" value="launch_vehicle"/>
-                <element inactive_on_update="false" label="Station" sequence="4" value="station"/>
+                <element inactive_on_update="false" label="Space Suit" sequence="8" value="Space Suit"/>
+                <element inactive_on_update="false" label="Station" sequence="10" value="station"/>
                 <element inactive_on_update="false" label="Rover" sequence="2" value="rover"/>
-                <element inactive_on_update="false" label="Infrastructure" sequence="6" value="infrastructure"/>
+                <element inactive_on_update="false" label="Infrastructure" sequence="5" value="infrastructure"/>
+                <element inactive_on_update="false" label="Station Module" sequence="9" value="Station Module"/>
             </choice>
         </element>
         <element label="Owner/Manufacturer" max_length="32" name="owner_manufacturer" reference="core_company" type="reference"/>

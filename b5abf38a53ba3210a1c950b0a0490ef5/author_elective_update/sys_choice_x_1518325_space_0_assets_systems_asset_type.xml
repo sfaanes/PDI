@@ -96,7 +96,7 @@
             <element>asset_type</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Station</label>
+            <label>Satellite</label>
             <language>en</language>
             <name>x_1518325_space_0_assets_systems</name>
             <sequence>4</sequence>
@@ -105,28 +105,9 @@
             <sys_created_on>2026-02-03 11:56:13</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_mod_count>1</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-02-03 11:56:13</sys_updated_on>
-            <value>station</value>
-        </sys_choice>
-        <sys_choice action="INSERT_OR_UPDATE">
-            <dependent_value/>
-            <element>asset_type</element>
-            <hint/>
-            <inactive>false</inactive>
-            <label>Satellite</label>
-            <language>en</language>
-            <name>x_1518325_space_0_assets_systems</name>
-            <sequence>5</sequence>
-            <synonyms/>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-02-03 11:56:13</sys_created_on>
-            <sys_domain>global</sys_domain>
-            <sys_domain_path>/</sys_domain_path>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-02-03 11:56:13</sys_updated_on>
+            <sys_updated_on>2026-02-04 09:54:28</sys_updated_on>
             <value>satellite</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -137,15 +118,15 @@
             <label>Infrastructure</label>
             <language>en</language>
             <name>x_1518325_space_0_assets_systems</name>
-            <sequence>6</sequence>
+            <sequence>5</sequence>
             <synonyms/>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2026-02-03 11:56:13</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_mod_count>1</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-02-03 11:56:13</sys_updated_on>
+            <sys_updated_on>2026-02-04 09:54:28</sys_updated_on>
             <value>infrastructure</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -156,16 +137,92 @@
             <label>Robot</label>
             <language>en</language>
             <name>x_1518325_space_0_assets_systems</name>
-            <sequence>7</sequence>
+            <sequence>6</sequence>
             <synonyms/>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2026-02-03 11:56:13</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-02-04 09:54:28</sys_updated_on>
+            <value>robot</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>asset_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Spacecraft</label>
+            <language>en</language>
+            <name>x_1518325_space_0_assets_systems</name>
+            <sequence>7</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-02-04 09:30:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-02-04 09:54:28</sys_updated_on>
+            <value>Spacecraft</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>asset_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Space Suit</label>
+            <language>en</language>
+            <name>x_1518325_space_0_assets_systems</name>
+            <sequence>8</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-02-04 09:35:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-02-04 09:54:28</sys_updated_on>
+            <value>Space Suit</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>asset_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Station Module</label>
+            <language>en</language>
+            <name>x_1518325_space_0_assets_systems</name>
+            <sequence>9</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-02-04 09:54:28</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-02-03 11:56:13</sys_updated_on>
-            <value>robot</value>
+            <sys_updated_on>2026-02-04 09:54:28</sys_updated_on>
+            <value>Station Module</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>asset_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Station</label>
+            <language>en</language>
+            <name>x_1518325_space_0_assets_systems</name>
+            <sequence>10</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-02-03 11:56:13</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-02-04 09:54:28</sys_updated_on>
+            <value>station</value>
         </sys_choice>
     </sys_choice>
 </record_update>
