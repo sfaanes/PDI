@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_widget">
+    <par_dashboard_widget action="INSERT_OR_UPDATE">
+        <canvas display_value="">68e7d96e53b63210a1c950b0a0490e07</canvas>
+        <component display_value="Bubble">50dbc52a13c8b4691f7c60e0246bf28c</component>
+        <component_props>{"showLegend":false,"legendPosition":"bottom","colorConfig":{"type":"default"},"newReporting":false,"enableAddZerosAtApi":true,"additionalGroupByConfig":[],"dataSources":[{"isDatabaseView":false,"allowRealTime":true,"label":"program_space_objective_m2m_Programs_Space Objectives","sourceType":"table","tableOrViewName":"x_1518325_space_0_program_space_objective_m2m","filterQuery":"","preferredVisualizations":["d24d53f60350de7a652caf3188a46ed2"],"id":"dGFibGV4XzE1MTgzMjVfc3BhY2VfMF9wcm9ncmFtX3NwYWNlX29iamVjdGl2ZV9tMm0xNzcwMjAyMDUyMDM3","dataCategories":["trend","group","simple"]}],"showHeader":true,"showTotalAggregate":false,"showSubAggregate":false,"showFirstGroupAggregate":false,"showSecondGroupAggregate":false,"hideMatrixAggregate":false,"wrapTitle":false,"showLoadingIndicator":false,"showHeaderSeparator":false,"contextMenuActions":[],"headingLevel":2,"showBorder":true,"bareBorder":false,"telemetry":null,"showDataPassthrough":false,"showAdditionalGroupBySelector":false,"allowAdditionalGroupByPerMetric":false,"metrics":[{"dataSource":"dGFibGV4XzE1MTgzMjVfc3BhY2VfMF9wcm9ncmFtX3NwYWNlX29iamVjdGl2ZV9tMm0xNzcwMjAyMDUyMDM3","id":"ZEdGaWJHVjRYekUxTVRnek1qVmZjM0JoWTJWZk1GOXdjbTluY21GdFgzTndZV05sWDI5aWFtVmpkR2wyWlY5dE1tMHhOemN3TWpBeU1EVXlNRE0zMTc3MDIwMjA1NDYyOA==","aggregateFunction":"COUNT","numberFormat":{"customFormat":false},"axisId":"primary"}],"groupBy":[{"categoryIndex":0,"groupBy":[{"dataSource":"dGFibGV4XzE1MTgzMjVfc3BhY2VfMF9wcm9ncmFtX3NwYWNlX29iamVjdGl2ZV9tMm0xNzcwMjAyMDUyMDM3","groupByField":"sys_mod_count","isRange":false,"isChoice":false,"isPaBucket":false}],"maxNumberOfGroups":10,"numberOfGroupsBasedOn":"NO_OF_GROUP_BASED_ON_PER_METRIC","showOthers":false,"disableRanges":false},{"categoryIndex":1,"groupBy":[{"dataSource":"dGFibGV4XzE1MTgzMjVfc3BhY2VfMF9wcm9ncmFtX3NwYWNlX29iamVjdGl2ZV9tMm0xNzcwMjAyMDUyMDM3","groupByField":"sys_mod_count","isRange":false,"isChoice":false,"isPaBucket":false}],"maxNumberOfGroups":10,"numberOfGroupsBasedOn":"NO_OF_GROUP_BASED_ON_PER_METRIC","showOthers":false,"disableRanges":false},{"groupBy":[{"dataSource":"dGFibGV4XzE1MTgzMjVfc3BhY2VfMF9wcm9ncmFtX3NwYWNlX29iamVjdGl2ZV9tMm0xNzcwMjAyMDUyMDM3","groupByField":"x_1518325_space_0_space_objective","isRange":false,"isChoice":false,"isPaBucket":false}],"categoryIndex":2,"maxNumberOfGroups":"ALL","numberOfGroupsBasedOn":"NO_OF_GROUP_BASED_ON_PER_METRIC","showOthers":false,"hideZeroValues":false,"disableRanges":false}],"filterPerMetric":[],"sortBy":"value","sortByOrder":"desc","trendBy":null,"showChange":false,"showChangePercentage":false,"showTarget":false,"showForecast":false,"showForecastRange":false,"showTrend":false,"showConfidenceBand":false,"showGapPercentage":false,"showSparkline":false,"showMetricLabel":false,"showThreshold":false,"showComment":false,"followFilters":true,"showFilterIcon":true,"enableRealTimeUpdate":false,"enableDrilldown":true,"enableClickAndStay":false,"showDataTable":false,"enableCustomEmptyState":false,"componentId":"jcckf3uo","emptyStateIllustration":"no-data","emptyStateHeading":"No data available.","emptyStateHeadingLevel":3,"emptyStateContent":"There are no scores available for the selected criteria. Contact your admin for more info.","emptyStateAlignment":"vertical-centered","refreshFrequency":null,"hideDevSettings":false,"configPropModifiers":{},"filterConfigurations":"@state.parFilters","showMaximumRange":false,"allowChangeDateRange":false,"showDateRangeByDefault":false,"applyDateRange":false,"numberOfPeriods":3,"showAbsolutePeriod":false,"scoreType":null,"showChangeFrom":"previous","useCurrentDateForEnd":false,"period":"M","useDataCache":false,"cacheExpirationTime":0,"showCacheTime":true,"dateFormat":"default","showRefresh":true,"showFilterAsSeparateSeries":false,"userInfo":"@context.session.user","sharedContext":{},"colors":{}}</component_props>
+        <h>12</h>
+        <name/>
+        <stored_component/>
+        <sys_class_name>par_dashboard_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-02-04 10:49:06</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>4869516253f63210a1c950b0a0490e63</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Space Tracker" source="x_1518325_space_0">b5abf38a53ba3210a1c950b0a0490ef5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Space Tracker">b5abf38a53ba3210a1c950b0a0490ef5</sys_scope>
+        <sys_update_name>par_dashboard_widget_4869516253f63210a1c950b0a0490e63</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-02-04 10:49:06</sys_updated_on>
+        <visualization/>
+        <w>12</w>
+        <widget_props/>
+        <x>19</x>
+        <y>0</y>
+    </par_dashboard_widget>
+</record_update>

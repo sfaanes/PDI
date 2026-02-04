@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="ba33d5e253b63210a1c950b0a0490ef2" label="Strategic Roadmap" max_length="40" name="x_1518325_space_0_roadmap" type="collection">
+        <element label="End Date" max_length="40" name="end_date" type="glide_date"/>
+        <element label="Confidence" max_length="40" name="confidence" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Start Date" max_length="40" name="start_date" type="glide_date"/>
+        <element label="Event Name" max_length="40" name="event_name" type="string"/>
+        <element choice_table="x_1518325_space_0_programs" dependent="target_table" dependent_on_field="target_table" label="Target Record" max_length="40" name="target_record" type="document_id" use_dependent_field="true"/>
+        <element default="x_1518325_space_0_programs" label="Target Table" max_length="40" name="target_table" type="table_name"/>
+        <element label="Description" max_length="40" name="description" type="html"/>
+        <element label="Event Description" max_length="65536" name="event_description" type="html"/>
+        <index name="index">
+            <element name="target_record"/>
+        </index>
+    </element>
+</database>
